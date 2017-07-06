@@ -37,6 +37,7 @@ html, body {
     overflow:hidden;
     width: auto;
     float:left;
+    margin-left:20px;
 }
 
 #img_logo{
@@ -57,6 +58,7 @@ html, body {
 #menu_list{
     float:right;
     overflow:hidden;
+    margin-right:20px;
 }
 
 #menu_list ul{
@@ -76,4 +78,8 @@ html, body {
 
 #menu_list p{
     margin:0;
+}
+
+#menu_list>ul>li>form>p:hover{
+    color:yellow;
 }

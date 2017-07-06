@@ -12,13 +12,33 @@
     <div id="header_tool_bar">
         <div id="header_contains">
             <div id="logo">
-                <form id="logo_form" method="post" action="{{ url_for('go_reserved') }}">
+                <form id="logo_form" method="get" action="{{ url_for('go_reserved') }}">
                     <img id="img_logo" onclick="document.getElementById('logo_form').submit()" src="../image/logo.png" alt="로고"/>
                     <!--<p id="txt_logo" onclick="document.getElementById('logo_form').submit()">Narsha Tech</p>-->
                 </form>
             </div>
             <div id="menu_list">
                 <ul>
+
+                    <li>
+                        <form id="help" method="get" action="{{ url_for('go_reserved')}}">
+                            <p id="header_help" onclick="document.getElementById('help').submit()">help</p>
+                        </form>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+
+                    <li>
+                        <form id="hosting" method="get" action="{{ url_for('go_reserved')}}">
+                            <p id="header_hosting" onclick="document.getElementById('hosting').submit()">hosting</p>
+                        </form>
+                    </li>
+
+                    <li>
+                        <p>|</p>
+                    </li>
+
                     <li>
                         <form id="signin" method="get" action="{{ url_for('go_reserved')}}">
                             <p id="header_sign_in" onclick="document.getElementById('signin').submit()">sign in</p>
@@ -34,6 +54,8 @@
                         </form>
                     </li>
 
+
+
             </ul>
 
             </div>
@@ -47,7 +69,7 @@
 </div>
 
 <div id="sign_up">
-    <div id="background" />
+    <div id="background_up" />
     <div id="signup_content" class="content">
         <div id="wrapper_login_form" class="box">
             <form id="login_form" method="post" action="index.jsp">

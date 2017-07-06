@@ -27,12 +27,26 @@ html, body {
     height: calc(100% - 60px);
 }
 
-#background {
-    position: absolute;
+
+#background_in {
+    position: relative;
     background-image: url("../image/background.jpg");
-    background-size: 121%;
+    background-size: 100%;
     background-repeat: no-repeat;
-    top: 0;
+    top: 200px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+
+#background_up {
+    position: relative;
+    background-image: url("../image/background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 100px;
     left: 0;
     bottom: 0;
     right: 0;
