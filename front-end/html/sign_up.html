@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Narsha Tech</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheet/header.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheet/sign_in_up.css">
+</head>
+<body>
+<div id="header">
+    <div id="top_color_bar"></div>
+    <div id="header_tool_bar">
+        <div id="header_contains">
+            <div id="logo">
+                <form id="logo_form" method="post" action="{{ url_for('go_reserved') }}">
+                    <img id="img_logo" onclick="document.getElementById('logo_form').submit()" src="../image/logo" alt="로고"/>
+                    <p id="txt_logo" onclick="document.getElementById('logo_form').submit()">Narsha Tech</p>
+                </form>
+            </div>
+            <div id="menu_list">
+                <ul>
+                    <li>
+                        <form id="signin" method="get" action="{{ url_for('go_reserved')}}">
+                            <p id="header_sign_in" onclick="document.getElementById('signin').submit()">sign in</p>
+                        </form>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+
+                    <li>
+                        <form id="signup" method="get" action="{{ url_for('go_reserved')}}">
+                            <p id="header_sign_up" onclick="document.getElementById('signup').submit()">sign up</p>
+                        </form>
+                    </li>
+
+            </ul>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div id="bottom_color_bar"></div>
+</div>
+
+<div id="sign_up">
+    <div id="background" />
+    <div id="signup_content" class="content">
+        <div id="wrapper_login_form" class="box">
+            <form id="login_form" method="post" action="index.jsp">
+                <a>회원가입</a><br>
+                <input type="hidden" name="hiddenvalue" value='signup'>
+                <label for="uid">ID</label>
+                <input class="input_border" type="text" name="uid" id="uid"><br>
+                <label for="pw">Password</label>
+                <input class="input_border" type="password" name="pw" id="pw"><br>
+                <label for="name">Name</label>
+                <input class="input_border" type="text" name="name" id="name">
+                <label for="phone">Phone('-' 생략해주세용..ㅠㅠ)</label>
+                <input class="input_border" type="number" name="phone" id="phone">
+                <label for="univer">University</label>
+                <input class="input_border" type="text" name="univer" id="univer">
+                <input class="input_border" name="check_gender">
+                <br><br>
+                <input class="btn btn-blue" type="submit" value="Sign Up">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
