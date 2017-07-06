@@ -41,7 +41,8 @@ html, body {
 
 #img_logo{
     float:left;
-    height:100%;
+    height:45px;
+    width:45px;
 }
 #txt_logo{
     float:left;
