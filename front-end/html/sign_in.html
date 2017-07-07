@@ -84,7 +84,13 @@
                 <label for="pw">Password</label>
                 <input class="input_border" type="password" name="pw"id="pw"><br><br>
                 <input class="btn btn-blue" type="submit" value="Sign In">
+                <br/>
+
             </form>
+            <form id="find_pw_id" method="get" action="{{url_for('go')}}">
+                <p id="findPw" onclick="document.getElementById('find_pw_id').submit()">find password or id</p>
+            </form>
+
         </div>
     </div>
 </div>

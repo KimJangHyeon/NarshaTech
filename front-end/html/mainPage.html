@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Narsha Tech</title>
+    <script type="text/javascript" src="../scripts/slideshow.js"></script>
     <link rel="stylesheet" type="text/css" href="../stylesheet/header.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheet/sign_in_up.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheet/main_page.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheet/slideshow.css">
+
 </head>
 <body>
 <div id="header">
@@ -19,6 +22,7 @@
             </div>
             <div id="menu_list">
                 <ul>
+
                     <li>
                         <form id="help" method="get" action="{{ url_for('go_reserved')}}">
                             <p id="header_help" onclick="document.getElementById('help').submit()">help</p>
@@ -37,6 +41,7 @@
                     <li>
                         <p>|</p>
                     </li>
+
                     <li>
                         <form id="signin" method="get" action="{{ url_for('go_reserved')}}">
                             <p id="header_sign_in" onclick="document.getElementById('signin').submit()">sign in</p>
@@ -65,30 +70,43 @@
     </div>
     <div id="bottom_color_bar"></div>
 </div>
+<!--<div class="slideshow-container">-->
+  <!--<div class="mySlides fade">-->
+    <!--<div class="numbertext">1 / 3</div>-->
+    <!--<img src="../image/logo.png" style="width:100%">-->
+    <!--<div class="text">Caption Text</div>-->
+  <!--</div>-->
 
-<div id="sign_up">
-    <div id="background_up" />
-    <div id="signup_content" class="content">
-        <div id="wrapper_login_form" class="box">
-            <form id="login_form" method="post" action="index.jsp">
-                <a>회원가입</a><br>
-                <input type="hidden" name="hiddenvalue" value='signup'>
-                <label for="uid">ID</label>
-                <input class="input_border" type="text" name="uid" id="uid"><br>
-                <label for="pw">Password</label>
-                <input class="input_border" type="password" name="pw" id="pw"><br>
-                <label for="name">Name</label>
-                <input class="input_border" type="text" name="name" id="name">
-                <label for="phone">Phone('-' 생략해주세용..ㅠㅠ)</label>
-                <input class="input_border" type="number" name="phone" id="phone">
-                <label for="univer">University</label>
-                <input class="input_border" type="text" name="univer" id="univer">
-                <input class="input_border" name="check_gender">
-                <br><br>
-                <input class="btn btn-blue" type="submit" value="Sign Up">
-            </form>
-        </div>
-    </div>
+  <!--<div class="mySlides fade">-->
+    <!--<div class="numbertext">2 / 3</div>-->
+    <!--<img src="../image/logo.png" style="width:100%">-->
+    <!--<div class="text">Caption Two</div>-->
+  <!--</div>-->
+
+  <!--<div class="mySlides fade">-->
+    <!--<div class="numbertext">3 / 3</div>-->
+    <!--<img src="../image/logo.png" style="width:100%">-->
+    <!--<div class="text">Caption Three</div>-->
+  <!--</div>-->
+
+  <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>-->
+  <!--<a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+<!--</div>-->
+<!--<br>-->
+
+<!--<div style="text-align:center">-->
+  <!--<span class="dot" onclick="currentSlide(1)"></span>-->
+  <!--<span class="dot" onclick="currentSlide(2)"></span>-->
+  <!--<span class="dot" onclick="currentSlide(3)"></span>-->
+<!--</div>-->
+
+<div class="slider" id="main-slider"><!-- outermost container element -->
+	<div class="slider-wrapper"><!-- innermost wrapper element -->
+		<img src="../image/number1.png" alt="First" class="slide" /><!-- slides -->
+		<img src="../image/number2.png" alt="Second" class="slide" />
+		<img src="../image/number3.png" alt="Third" class="slide" />
+	</div>
 </div>
+
 </body>
 </html>
