@@ -31,7 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1','13.124.42.166']
 
 ADMINS=(
-	('',''),
+	('kangsj123','kangsj123@naver.com'),
 )
 
 MANAGERS=ADMINS
@@ -88,8 +88,8 @@ DATABASES = {
 #        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 	'ENGINE': 'django.db.backends.mysql',
 	'NAME':'campus',
-	'USER':'',
-	'PASSWORD': '',
+	'USER':'kangsj123',
+	'PASSWORD': 'ksj1203091678',
 	'HOST': 'localhost',
 	'PORT': '',
     }
