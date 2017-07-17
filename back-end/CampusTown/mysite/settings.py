@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
-
+import pymysql
+pymysql.install_as_MySQLdb()
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -23,10 +24,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'c4xc-76%)du9wcs#_zyrlztfm!&a!%cy!v%emr78_0tknv4r-&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = True
+#TEMPLATE_DEBUG=DEBUG
 
 ALLOWED_HOSTS = ['127.0.0.1','13.124.42.166']
 
+ADMINS=(
+	('',''),
+)
+
+MANAGERS=ADMINS
 
 # Application definition
 
@@ -37,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'activity',
 ]
 
 MIDDLEWARE = [
@@ -81,8 +90,8 @@ DATABASES = {
 	'NAME':'campus',
 	'USER':'',
 	'PASSWORD': '',
-	'HOST': '',
-	'POST': '',
+	'HOST': 'localhost',
+	'PORT': '',
     }
 }
 
