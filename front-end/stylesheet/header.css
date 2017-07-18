@@ -83,6 +83,11 @@ html, body {
     margin:0;
 }
 
-#menu_list>ul>li>form>p:hover{
+#menu_list>ul>li>form>a:hover,p:hover{
     color:yellow;
+}
+
+#menu_list>ul>li>form>a {
+    color:#be00ff;
+    text-decoration:none;
 }
