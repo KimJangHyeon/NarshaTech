@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'activity',
-	'login',
 ]
 
 MIDDLEWARE = [
@@ -89,8 +88,8 @@ DATABASES = {
 #        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 	'ENGINE': 'django.db.backends.mysql',
 	'NAME':'campus',
-	'USER':'root',
-	'PASSWORD': 'taesoobear0808',
+	'USER':'kangsj123',
+	'PASSWORD': 'ksj1203091678',
 	'HOST': 'localhost',
 	'PORT': '',
     }
