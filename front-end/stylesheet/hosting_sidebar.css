@@ -2,9 +2,6 @@ body{
     margin:0;
 }
 
-div{
-    border: dashed 1px blue;
-}
 #side_bar{
     display:inline-block;
     position:fixed;
@@ -22,19 +19,6 @@ div{
     width:85%;
     height:100%;
     left:15%;
-}
-
-#host8_btn {
-	margin-top: 200px;
-}
-
-#host8_input {
-	margin-top: 50px;
-	min-height: 50px;
-}
-
-#host2_btn {
-	margin-top: 50px;
 }
 
 .form_number{
@@ -68,59 +52,6 @@ div{
     margin:0;
 }
 
-.host_f_two{
-    margin-left: 50px;
-    margin-top: 50px;
-    display: inline-block;
-    height: 550px;
-    width: 42%;
-	vertical-align: top;
-}
-
-.host2_f_one{
-    margin-left: 50px;
-    margin-top: 50px;
-    display: inline-block;
-    height: 550px;
-    width: 35%;
-	vertical-align: top;
-}
-
-.host2_f_two_three{
-    margin-left: 30px;
-    margin-top: 50px;
-    display: inline-block;
-    height: 550px;
-    width: 25%;
-	vertical-align: top;
-}
-
-.host2_graph{
-    border: solid 1px black;
-    height: 250px;
-    weight: 50px;
-}
-
-.host8_f_one_two{
-	margin-left: 30px;
-    margin-top: 50px;
-    display: inline-block;
-    height: 550px;
-    width: 30%;
-	vertical-align: top;
-}
-
-.host8_f_three{
-	margin-left: 30px;
-    margin-top: 50px;
-    display: inline-block;
-    height: 550px;
-    width: 25%;
-	vertical-align: top;
-}
-
-
-
 #img_side_bar_logo{
     width:50%;
     height:50%;
@@ -128,98 +59,4 @@ div{
 
 #side_bar_logo{
 
-}
-
-#hosting_form_two {
-    margin-left: 15%;
-    width: 80%;
-    height: 600px;
-}
-
-#host0_text, #host1_text {
-    width: 100%;
-    height: 85%;
-}
-
-#host0_check_btn, #host1_check_btn{
-    width: 100%;
-    height: 10%;
-    display: inline-block;	//소용없는듯
-}
-
-#host0_img, #host1_img{
-    border: solid 1px black;
-    float: right;
-    width: 75%;
-    height: 100%;
-}
-
-.btn {
-    position: relative;
-    display: inline-block;
-    padding: 6px 12px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-repeat: repeat-x;
-    background-position: -1px -1px;
-    background-size: 110% 110%;
-    border: 1px solid rgba(27,31,35,0.2);
-    border-radius: 0.25em;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: block;
-    width: 25%;
-    text-align: center;
-    float: right;
-}
-
-.btn-blue {
-    color: #fff;
-    background-color: #28a745;
-    background-image: -webkit-linear-gradient(270deg, #404584 30%, #404584 30%);
-    background-image: linear-gradient(-180deg, #404584 30%, #404584 30%);
-}
-
-select.select_border{
-    min-height: 14px;
-    padding: 6px 8px;
-    font-size: 12px;
-    line-height: 12px;
-    color: #24292e;
-    vertical-align: middle;
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: right 8px center;
-    border: 1px solid #d1d5da;
-    border-radius: 3px;
-    outline: none;
-    width: 94%;
-    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
-    margin-top: 50px;
-}
-
-input.input_border {
-    min-height: 14px;
-    padding: 6px 8px;
-    font-size: 12px;
-    line-height: 12px;
-    color: #24292e;
-    vertical-align: middle;
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: right 8px center;
-    border: 1px solid #d1d5da;
-    border-radius: 3px;
-    outline: none;
-    width: 94%;
-    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
 }
