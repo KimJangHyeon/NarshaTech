@@ -1,14 +1,14 @@
 {% load staticfiles %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>CnCTown</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/sign_in_up.css' %}">
 </head>
-<body>
+<body
+
+<!--header-->
+
 <div id="header">
     <!--<div id="top_color_bar"></div>-->
     <div id="header_tool_bar">
@@ -33,8 +33,10 @@
 
                     <li>
                         <form id="hosting" method="get" action="">
+						<a href="hosting.html">
                             <p id="header_hosting" onclick="document.getElementById('hosting').submit()">hosting</p>
-                        </form>
+						</a>
+						</form>
                     </li>
 
                     <li>
@@ -43,8 +45,10 @@
 
                     <li>
                         <form id="signin" method="get" action="">
+						<a href="sign_in.html">
                             <p id="header_sign_in" onclick="document.getElementById('signin').submit()">sign in</p>
-                        </form>
+                        </a>
+						</form>
                     </li>
                     <li>
                         <p>|</p>
@@ -52,50 +56,58 @@
 
                     <li>
                         <form id="signup" method="get" action="">
+						<a href="sign_up.html">
                             <p id="header_sign_up" onclick="document.getElementById('signup').submit()">sign up</p>
-                        </form>
+                        </a>
+						</form>
                     </li>
-
-
-
             </ul>
-
             </div>
-
-
         </div>
-
-
     </div>
     <div id="bottom_color_bar"></div>
 </div>
 
+<%block slide%>
+<%endblock%>
 
-<div id="sign_in">
-    <div id="background_in"/>
-    <!--{% if error %}<p class="error"><strong>Error:</strong> {{ error }}{% endif %}-->
-    <div id="signup_content" class="content">
-        <div id="wrapper_login_form" class="box">
+<%block content%>
+<%endblock%>
 
-            <form id="login_form" method="post" action="">{% csrf_token %}
-                <a>로그인</a>
-                <input type="hidden" name="hiddenvalue" value='signin'>
-                <br>
-                <label for="username">ID</label>
-                <input class="input_border" type="text" name="username" id="username"><br>
-                <label for="Password">Password</label>
-                <input class="input_border" type="password" name="password"id="password"><br><br>
-                <input class="btn btn-blue" type="submit" value="Sign In">
-                <br/>
 
-            </form>
-            <form id="find_pw_id" method="get" action="">
-                <p id="findPw" onclick="document.getElementById('find_pw_id').submit()">find password or id</p>
-            </form>
+<!--<div class="slideshow-container">-->
+  <!--<div class="mySlides fade">-->
+    <!--<div class="numbertext">1 / 3</div>-->
+    <!--<img src="../image/logo.png" style="width:100%">-->
+    <!--<div class="text">Caption Text</div>-->
+  <!--</div>-->
 
-        </div>
-    </div>
-</div>
+  <!--<div class="mySlides fade">-->
+    <!--<div class="numbertext">2 / 3</div>-->
+    <!--<img src="../image/logo.png" style="width:100%">-->
+    <!--<div class="text">Caption Two</div>-->
+  <!--</div>-->
 
+  <!--<div class="mySlides fade">-->
+    <!--<div class="numbertext">3 / 3</div>-->
+    <!--<img src="../image/logo.png" style="width:100%">-->
+    <!--<div class="text">Caption Three</div>-->
+  <!--</div>-->
+
+  <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>-->
+  <!--<a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+<!--</div>-->
+<!--<br>-->
+
+<!--<div style="text-align:center">-->
+  <!--<span class="dot" onclick="currentSlide(1)"></span>-->
+  <!--<span class="dot" onclick="currentSlide(2)"></span>-->
+  <!--<span class="dot" onclick="currentSlide(3)"></span>-->
+<!--</div>-->
+<link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/hostring.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/slideshow.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/product.css' %}">
+<script type="text/javascript" src="../scripts/slideshow.js"></script>
 </body>
 </html>

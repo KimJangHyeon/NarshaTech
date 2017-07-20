@@ -14,10 +14,10 @@ def signin(request):
         user = authenticate(username = username, password = password)
         if user is not None:
             login(request, user)
-            return redirect('index')
+            return redirect('/')
         else:
-            messages.info(request, 'Your password has been changed successfully!')
-            return HttpResponseRedirect('/')
+            messages.info(request, 'Login failed. Try again.')
+            return HttpResponse("")
     else:
         form = LoginForm()
         return render(request, 'login/login.html', {'form': form})
