@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'activity',
 	'login',
+	'main',
 ]
 
 MIDDLEWARE = [
@@ -90,7 +91,7 @@ DATABASES = {
 	'ENGINE': 'django.db.backends.mysql',
 	'NAME':'campus',
 	'USER':'root',
-	'PASSWORD': 'taesoobear0808',
+	'PASSWORD': 'addressbook123',
 	'HOST': 'localhost',
 	'PORT': '',
     }

@@ -12,7 +12,7 @@
     <div id="header_tool_bar">
         <div id="header_contains">
             <div id="logo">
-                <form id="logo_form" method="get" action={{% url 'campus' %}}>
+                <form id="logo_form" method="get" action="">
                     <img id="img_logo" onclick="document.getElementById('logo_form').submit()" src="../image/logo.png" alt="로고"/>
                     <!--<p id="txt_logo" onclick="document.getElementById('logo_form').submit()">Narsha Tech</p>-->
                 </form>
@@ -21,7 +21,7 @@
                 <ul>
 
                     <li>
-                        <form id="help" method="get" action="{{% url 'help' %}}">
+                        <form id="help" method="get" action="">
                             <p id="header_help" onclick="document.getElementById('help').submit()">help</p>
                         </form>
                     </li>
@@ -30,7 +30,7 @@
                     </li>
 
                     <li>
-                        <form id="hosting" method="get" action="{{% url 'host' %}}">
+                        <form id="hosting" method="get" action="">
                             <p id="header_hosting" onclick="document.getElementById('hosting').submit()">hosting</p>
                         </form>
                     </li>
@@ -40,7 +40,7 @@
                     </li>
 
                     <li>
-                        <form id="signin" method="get" action="{{% url 'login' %}}">
+                        <form id="signin" method="get" action="">
                             <p id="header_sign_in" onclick="document.getElementById('signin').submit()">sign in</p>
                         </form>
                     </li>
@@ -49,7 +49,7 @@
                     </li>
 
                     <li>
-                        <form id="signup" method="get" action="{{% url 'signup' %}}">
+                        <form id="signup" method="get" action="">
                             <p id="header_sign_up" onclick="document.getElementById('signup').submit()">sign up</p>
                         </form>
                     </li>
@@ -75,19 +75,19 @@
     <div id="signup_content" class="content">
         <div id="wrapper_login_form" class="box">
 
-            <form id="login_form" method="post" action="{{% url 'login' %}}">
+            <form id="login_form" method="post" action="">{% csrf_token %}
                 <a>로그인</a>
                 <input type="hidden" name="hiddenvalue" value='signin'>
                 <br>
-                <label for="uid">ID</label>
-                <input class="input_border" type="text" name="uid" id="uid"><br>
-                <label for="pw">Password</label>
-                <input class="input_border" type="password" name="pw"id="pw"><br><br>
+                <label for="username">ID</label>
+                <input class="input_border" type="text" name="username" id="username"><br>
+                <label for="Password">Password</label>
+                <input class="input_border" type="password" name="password"id="password"><br><br>
                 <input class="btn btn-blue" type="submit" value="Sign In">
                 <br/>
 
             </form>
-            <form id="find_pw_id" method="get" action="{{url_for('go')}}">
+            <form id="find_pw_id" method="get" action="">
                 <p id="findPw" onclick="document.getElementById('find_pw_id').submit()">find password or id</p>
             </form>
 
