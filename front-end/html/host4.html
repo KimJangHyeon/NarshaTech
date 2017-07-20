@@ -45,7 +45,7 @@
     </div>
 </div>
 <div id="contain">
-    <form id="host4_form" method="post" action="url_for{{name()}}">
+    <form id="host4_form" method="post" action="url_for{{name()}}" enctype="multipart/form-data">
         <div id="host_col0">
             <div id="col0_contain">
                 <!--왜 쓰는 거지-->
@@ -77,12 +77,12 @@
             <div id="col1_contain">
                 <a class="imp_level2">대표 영상, 사진</a>
                 <div id="video_block">
-                    <input type="file" name="hosting_video">
+                    <input class="videoBox videoBox_size" type="file" name="hosting_video">
                 </div>
                 <div id="img_block">
-                    <button type="button" onclick="addPicture()">add</button>
+                    <button class="videoBox " type="button" onclick="addPicture()">image add</button>
                 </div>
-                <br/><br/>
+                <br/>
                     <p style="display:inline-block">전체 화면 미리보기</p>
                 <input class="btn btn-nar" type="submit" value="button">
             </div>

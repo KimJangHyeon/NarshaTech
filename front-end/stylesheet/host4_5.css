@@ -37,3 +37,15 @@
     width:100%;
     height:21%;
 }
+
+#video_block{
+    position:relative;
+    max-height:30%;
+    width:100%;
+    background:beige;
+}
+
+#img_block{
+    margin:10px 0;
+    
+}
