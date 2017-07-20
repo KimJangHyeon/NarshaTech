@@ -30,10 +30,15 @@ body{
     border-bottom-width:1px;
 }
 
+.form_number a {
+	text-decoration: none;
+}
+
 .form_number p{
     color: white;
     font-family: NaumGothic;
     font-size:20px;
+	text-decoration: none;
     top:10px;
     margin:0;
 }
@@ -50,6 +55,7 @@ body{
     font-family: NaumGothic;
     font-size:20px;
     margin:0;
+	text-decoration: none;
 }
 
 #img_side_bar_logo{
