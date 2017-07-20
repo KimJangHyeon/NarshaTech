@@ -12,7 +12,7 @@
     <div id="header_tool_bar">
         <div id="header_contains">
             <div id="logo">
-                <form id="logo_form" method="get" action="{{ url_for('go_reserved') }}">
+                <form id="logo_form" method="get" action={{% url 'campus' %}}>
                     <img id="img_logo" onclick="document.getElementById('logo_form').submit()" src="../image/logo.png" alt="로고"/>
                     <!--<p id="txt_logo" onclick="document.getElementById('logo_form').submit()">Narsha Tech</p>-->
                 </form>
@@ -21,7 +21,7 @@
                 <ul>
 
                     <li>
-                        <form id="help" method="get" action="{{ url_for('go_reserved')}}">
+                        <form id="help" method="get" action="{{% url 'help' %}}">
                             <p id="header_help" onclick="document.getElementById('help').submit()">help</p>
                         </form>
                     </li>
@@ -30,7 +30,7 @@
                     </li>
 
                     <li>
-                        <form id="hosting" method="get" action="{{ url_for('go_reserved')}}">
+                        <form id="hosting" method="get" action="{{% url 'host' %}}">
                             <p id="header_hosting" onclick="document.getElementById('hosting').submit()">hosting</p>
                         </form>
                     </li>
@@ -40,7 +40,7 @@
                     </li>
 
                     <li>
-                        <form id="signin" method="get" action="{{ url_for('go_reserved')}}">
+                        <form id="signin" method="get" action="{{% url 'login' %}}">
                             <p id="header_sign_in" onclick="document.getElementById('signin').submit()">sign in</p>
                         </form>
                     </li>
@@ -49,7 +49,7 @@
                     </li>
 
                     <li>
-                        <form id="signup" method="get" action="{{ url_for('go_reserved')}}">
+                        <form id="signup" method="get" action="{{% url 'signup' %}}">
                             <p id="header_sign_up" onclick="document.getElementById('signup').submit()">sign up</p>
                         </form>
                     </li>
@@ -75,7 +75,7 @@
     <div id="signup_content" class="content">
         <div id="wrapper_login_form" class="box">
 
-            <form id="login_form" method="post" action="{{ url_for('go_reserved') }}">
+            <form id="login_form" method="post" action="{{% url 'login' %}}">
                 <a>로그인</a>
                 <input type="hidden" name="hiddenvalue" value='signin'>
                 <br>

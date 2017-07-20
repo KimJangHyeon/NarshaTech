@@ -7,3 +7,8 @@ class LoginForm(forms.ModelForm) :
     class Meta :
         model = User
         fields = ['username', 'password']
+
+class UserForm(forms.ModelForm):
+    class Meta:
+        model=User
+        fields=['username','is_staff','password']
