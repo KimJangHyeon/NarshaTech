@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Narsha Tech</title>
 </head>
-<body>
+<body onload="plusSlides(1)">
 <div id="header">
     <!--<div id="top_color_bar"></div>-->
     <div id="header_tool_bar">
@@ -72,14 +72,43 @@
     <div id="bottom_color_bar"></div>
 </div>
 
+<div class="slideshow-container">
+  <div class="mySlides fade" style="display: block;">
+    <div class="numbertext" >1 / 3</div>
+    <img src="../image/number1.png" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
 
-<div class="slider" id="main-slider"><!-- outermost container element -->
-	<div class="slider-wrapper"><!-- innermost wrapper element -->
-		<img src="../image/number1.png" alt="First" class="slide" /><!-- slides -->
-		<img src="../image/number2.png" alt="Second" class="slide" />
-		<img src="../image/number3.png" alt="Third" class="slide" />
-	</div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="../image/number2.png" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="../image/number3.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<!--<div class="slider" id="main-slider">&lt;!&ndash; outermost container element &ndash;&gt;-->
+	<!--<div class="slider-wrapper">&lt;!&ndash; innermost wrapper element &ndash;&gt;-->
+		<!--<img src="../image/number1.png" alt="First" class="slide" />&lt;!&ndash; slides &ndash;&gt;-->
+		<!--<img src="../image/number2.png" alt="Second" class="slide" />-->
+		<!--<img src="../image/number3.png" alt="Third" class="slide" />-->
+	<!--</div>-->
+<!--</div>-->
 
 <div class="containerSlide">
     <div class="container_j">
