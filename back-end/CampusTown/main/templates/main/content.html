@@ -1,6 +1,14 @@
 {% extends 'main/main.html' %}
 <%block content%>
+<div class="slider" id="main-slider"><!-- outermost container element -->
+	<div class="slider-wrapper"><!-- innermost wrapper element -->
+		<img src="../image/number1.png" alt="First" class="slide" /><!-- slides -->
+		<img src="../image/number2.png" alt="Second" class="slide" />
+		<img src="../image/number3.png" alt="Third" class="slide" />
+	</div>
+</div>
   {% if contents is not none %}
+
   {% for content in contents %}
         <div class="container_j">
             <a href="https://trello.com/b/reuaCfXg/campustown" target="_blank" rel="noopener noreferer" class="link_j">
