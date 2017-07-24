@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-<%block content%>
+{%block content%}
   {% if contents is not none %}
     <h1> data exist </h1>
     {% for content in contents %}
@@ -24,4 +24,4 @@
       <p>Data doesn't exist</p/>
   {% endif %}
   </div>
-<%endblock%>
+{%endblock%}

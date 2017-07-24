@@ -12,101 +12,23 @@
 <div>
 
 <div class="containerSlide">
-    <div class="container_j">
-        <a href="https://trello.com/b/reuaCfXg/campustown" target="_blank" rel="noopener noreferer" class="link_j">
-            <img src="https://cdn.pixabay.com/photo/2017/06/24/23/03/railway-2439189_960_720.jpg">
-            <div class = "product_explain">
-                <div class="twoLineTitle">
-                    <span><p>가격</p></span>
-                    <div class="inline_g">
-                        <span class="text_5"><p>여행 설명</p></span>
-                    </div>
-                </div>
-            </div>
-            <div class="product_score">
-                <div ><p>별점</p></div>
-            </div>
-        </a>
-    </div>
-    <div class="container_j">
-        <a href="https://trello.com/b/reuaCfXg/campustown" target="_blank" rel="noopener noreferer" class="link_j">
-            <img src="https://cdn.pixabay.com/photo/2017/06/24/23/03/railway-2439189_960_720.jpg">
-            <div class = "product_explain">
-                <div class="twoLineTitle">
-                    <span><p>가격</p></span>
-                    <div class="inline_g">
-                        <span class="text_5"><p>여행 설명</p></span>
-                    </div>
-                </div>
-            </div>
-            <div class="product_score">
-                <div ><p>별점</p></div>
-            </div>
-        </a>
-    </div>
-    <div class="container_j">
-        <a href="https://trello.com/b/reuaCfXg/campustown" target="_blank" rel="noopener noreferer" class="link_j">
-            <img src="https://cdn.pixabay.com/photo/2017/06/24/23/03/railway-2439189_960_720.jpg">
-            <div class = "product_explain">
-                <div class="twoLineTitle">
-                    <span><p>가격</p></span>
-                    <div class="inline_g">
-                        <span class="text_5"><p>여행 설명</p></span>
-                    </div>
-                </div>
-            </div>
-            <div class="product_score">
-                <div ><p>별점</p></div>
-            </div>
-        </a>
-    </div>
-    <div class="container_j">
-        <a href="https://trello.com/b/reuaCfXg/campustown" target="_blank" rel="noopener noreferer" class="link_j">
-            <img src="https://cdn.pixabay.com/photo/2017/06/24/23/03/railway-2439189_960_720.jpg">
-            <div class = "product_explain">
-                <div class="twoLineTitle">
-                    <span><p>가격</p></span>
-                    <div class="inline_g">
-                        <span class="text_5"><p>여행 설명</p></span>
-                    </div>
-                </div>
-            </div>
-            <div class="product_score">
-                <div ><p>별점</p></div>
-            </div>
-        </a>
-    </div>
-    <div class="container_j">
-        <a href="https://trello.com/b/reuaCfXg/campustown" target="_blank" rel="noopener noreferer" class="link_j">
-            <img src="https://cdn.pixabay.com/photo/2017/06/24/23/03/railway-2439189_960_720.jpg">
-            <div class = "product_explain">
-                <div class="twoLineTitle">
-                    <span><p>가격</p></span>
-                    <div class="inline_g">
-                        <span class="text_5"><p>여행 설명</p></span>
-                    </div>
-                </div>
-            </div>
-            <div class="product_score">
-                <div ><p>별점</p></div>
-            </div>
-        </a>
-    </div>
-    <div class="container_j">
-        <a href="https://trello.com/b/reuaCfXg/campustown" target="_blank" rel="noopener noreferer" class="link_j">
-            <img src="https://cdn.pixabay.com/photo/2017/06/24/23/03/railway-2439189_960_720.jpg">
-            <div class = "product_explain">
-                <div class="twoLineTitle">
-                    <span><p>가격</p></span>
-                    <div class="inline_g">
-                        <span class="text_5"><p>여행 설명</p></span>
-                    </div>
-                </div>
-            </div>
-            <div class="product_score">
-                <div ><p>별점</p></div>
-            </div>
-        </a>
-    </div>
+  {% for content in contents %}
+      <div class="container_j">
+          <a href="https://trello.com/b/reuaCfXg/campustown" target="_blank" rel="noopener noreferer" class="link_j">
+              <img src={{content.image}}>
+              <div class = "product_explain">
+                  <div class="twoLineTitle">
+                      <span><p>{{content.title}}</p></span>
+                      <div class="inline_g">
+                          <span class="text_5"><p>{{content.text}}</p></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="product_score">
+                  <div ><p>{{content.rating}}</p></div>
+              </div>
+          </a>
+      </div>
+    {% endfor %}
 </div>
 {% endblock %}
