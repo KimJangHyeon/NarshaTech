@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:maxlength="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Narsha Tech</title>
@@ -73,30 +73,39 @@
             <form id="login_form" method="post" action="index.jsp">
                 <a>회원가입</a><br>
                 <input type="hidden" name="hiddenvalue" value='signup'>
+
                 <label for="uid">ID</label>
-                <input class="input_border" type="text" name="uid" id="uid"><br><br/>
+                <input class="input_border" type="text" name="uid" id="uid" onkeypress="alpAndNumber('i')"><br><br/>
+
                 <label for="pw">Password</label>
                 <input class="input_border" type="password" name="pw" id="pw"><br><br/>
+
                 <label for="email">Email</label>
-                <input class="input_border" type="text" name="email" id="email"><br><br/>
+                <input class="input_border" type="text" name="email" id="email" onkeypress="alpAndNumber('e');"><br><br/>
+
                 <label for="lastName">Last Name</label>
-                <input class="input_border" type="text" name="lastName" id="lastName"><br/><br/>
+                <input class="input_border" type="text" name="lastName" id="lastName" onkeypress="onlyAlp();"><br/><br/>
+
                 <label for="firstName">Name</label>
-                <input class="input_border" type="text" name="firstName" id="firstName">
+                <input class="input_border" type="text" name="firstName" id="firstName" onkeypress="onlyAlp();">
+
                 <label for="phone">Phone('-' 생략해주세용..ㅠㅠ)</label><br/><br/>
-                <input class="input_border" type="number" name="phone" id="phone">
-               <br/><br/>
-                <label>Gender</label>
-                <input type="radio" name="gender" id="genderMan" value="HTML">남
-                <input type="radio" name="gender" id="genderWoman" value="CSS">여
+                <input class="input_border" placeholder="ex)0101111xxxx" type="text" name="phone" id="phone" style="ime-mode:disabled;" maxlength=11 onkeypress="onlyNumber(this);">
                 <br/><br/>
+
+                <label>Gender</label>
+                <input type="radio" name="gender" id="genderMan" value="man">남
+                <input type="radio" name="gender" id="genderWoman" value="woman">여
+                <br/><br/>
+
                 <label for="birth">Birth</label>
-                <input class="input_border" type="number" name="birth" id="birth">
+                <input class="input_border" placeholder="ex)19951115" type="text" name="birth" id="birth" style="ime-mode: disabled;" onkeypress="onlyNumber(this);">
                 <br><br>
                 <input class="btn btn-blue" type="submit" value="Sign Up">
             </form>
         </div>
     </div>
 </div>
+<script type="text/javascript" src="../scripts/sign_form.js"></script>
 </body>
 </html>

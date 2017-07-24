@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
-
-    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
-    <script>
-      /**
+/**
+ * Created by rlawk on 2017-07-20.
+ */
+/**
       * Reference to Firebase database.
       * @const
       */
@@ -204,9 +185,3 @@
           });
         });
       }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0YyDiima_RM8NSbgLm3HwdIXfQUV9Zyo&libraries=visualization&callback=initMap">
-    </script>
-  </body>
-</html>

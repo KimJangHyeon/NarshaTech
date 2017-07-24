@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="../stylesheet/hosting_form_three.css">
     <link rel="stylesheet" href="../stylesheet/textstyle.css">
     <link rel="stylesheet" href="../stylesheet/host4_5.css">
+    <style>
+       #map {
+        height: 100%;
+        width: 100%;
+       }
+    </style>
 </head>
 <body>
 <div id="side_bar">
@@ -47,7 +53,7 @@
     <div id="host_col0">
         <div id="col0_contain5">
             <div id="map_block">
-
+                <div id="map"></div>
             </div>
             <div class="intro">
 
@@ -62,12 +68,35 @@
     </div>
     <div id="host_col1">
         <div id="col1_contain5">
+            <div class="intro_block">
+                <p class="imp_level1">소개</p>
+                <textarea class="imp_level0" style="width:100%;height:180px;">
 
+                </textarea>
+            </div>
+            <div class="intro_block">
+                <p class="imp_level1">소개</p>
+                <textarea class="imp_level0" style="width:100%;height:180px;">
+
+                </textarea>
+            </div>
+            <div class="intro_block">
+                <p class="imp_level1">소개</p>
+                <textarea class="imp_level0" style="width:100%;height:180px;">
+
+                </textarea>
+            </div>
         </div>
     </div>
     <div id="host_col2">
 
     </div>
 </div>
+<script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+<script type="text/javascript" src="../scripts/map.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0YyDiima_RM8NSbgLm3HwdIXfQUV9Zyo&libraries=visualization&callback=initMap">
+    </script>
+<!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0YyDiima_RM8NSbgLm3HwdIXfQUV9Zyo&callback=initMap"></script>-->
 </body>
 </html>
