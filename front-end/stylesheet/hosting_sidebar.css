@@ -5,7 +5,7 @@ body{
 #side_bar{
     display:inline-block;
     position:fixed;
-    width:15%;
+    width:13%;
     height:100%;
     background: rgba(0, 128, 0, 0.53);
     left:0;
@@ -65,4 +65,8 @@ body{
 
 #side_bar_logo{
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 04e1a080aa0f9cf85ba32a3c33651d62f258275f
