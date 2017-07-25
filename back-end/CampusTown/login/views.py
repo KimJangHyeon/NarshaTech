@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import UserForm, LoginForm
@@ -22,8 +21,4 @@ def signin(request):
     else:
         form = LoginForm()
         return render(request, 'login/login.html', {'form': form})
-=======
-from django.shortcuts import render
-
 # Create your views here.
->>>>>>> 04e1a080aa0f9cf85ba32a3c33651d62f258275f
