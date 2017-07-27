@@ -1,5 +1,5 @@
 from django.db import models
-from login import UserForm as User
+from login.forms import UserForm as User
 
 # Create your models here.
 
@@ -68,7 +68,7 @@ travelDestination VARCHAR(50) NOT NULL,
 travelIntroduction VARCHAR(500) NOT NULL,
 meetingPlace VARCHAR(128) NOT NULL,
 price FLOAT(2) NOT NULL,
-maximumCapacity INTEGER NOT NULL DEFAULT 1, --0
+maximumCapacity INTEGER NOT NULL DEFAULT 1, --0 이하면 값 재설정.
 additionalInformation VARCHAR(500) NULL DEFAULT NULL,
 readyTime FLOAT(2) NOT NULL DEFAULT 0.00, --준비시간. 이때까지 예약인원이 0명인 경우 여행 아예 취소
 lastReadyTime FLOAT(2) NOT NULL DEFAULT 0.00, --막바지시간. 준비시간에 예약인원이 1명이라도 있었던 경우 다른 사람을 받을 수 있는 마지막 시간.

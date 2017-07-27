@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../stylesheet/hosting_sidebar.css">
+    <link rel="stylesheet" href="../stylesheet/hosting_form_three.css">
+    <link rel="stylesheet" href="../stylesheet/textstyle.css">
+    <link rel="stylesheet" href="../stylesheet/host4_5.css">
+    <link rel="stylesheet" href="../stylesheet/input.css">
+</head>
+<body>
+<div id="side_bar">
+    <div id="side_bar_logo">
+        <img id="img_side_bar_logo" src="../image/logo.png" alt="로고"/>
+    </div>
+    <div id = "form_sort">
+        <div class="form_number">
+            <p>number1</p>
+        </div>
+        <div class="form_number_selected">
+            <p>number1</p>
+        </div>
+        <div class="form_number">
+            <p>number1</p>
+        </div>
+        <div class="form_number">
+            <p>number1</p>
+        </div>
+        <div class="form_number">
+            <p>number1</p>
+        </div>
+        <div class="form_number">
+            <p>number1</p>
+        </div>
+        <div class="form_number">
+            <p>number1</p>
+        </div>
+        <div class="form_number">
+            <p>number1</p>
+        </div>
+        <div class="form_number">
+            <p>number1</p>
+        </div>
+    </div>
+</div>
+<div id="contain">
+    <form id="host4_form" method="post" action="url_for{{name()}}" enctype="multipart/form-data">
+        <div id="host_col0">
+            <div id="col0_contain">
+                <!--왜 쓰는 거지-->
+                <input type="hidden" name="hiddenvalue" value='host4'>
+                <a class="imp_level2">제목</a>
+                <p class="imp_level1">속잎나고 가지에 싹이 트고 꽃 피고 새 우는 봄날의 천지<br/>는 얼마나 기쁘며 얼머나 아름다우냐? 이것을 얼음</p><br/>
+                <input class="box input_border" type="text" name="htitle" id="htitle"><br/><br/>
+
+                <a class="imp_level2">테그라인</a>
+                <p class="imp_level1">속잎나고 가지에 싹이 트고 꽃 피고 새 우는 봄날의 천지<br/>는 얼마나 기쁘며 얼머나 아름다우냐? 이것을 얼음</p><br/>
+                <input class="box input_border" type="text" name="htag" id="htag"><br/><br/><br/>
+
+                <a class="imp_level2">트립시작, 종료시간</a><br/><br/>
+                <select class="box select_border" name="htrip_start" id="htrip_start">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select><br/><br/>
+                <select class="box select_border" name="htrip_end" id="htrip_end">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select><br/><br/>
+           </div>
+        </div>
+        <div id="host_col1">
+            <div id="col1_contain">
+                <a class="imp_level2">대표 영상, 사진</a>
+                <div id="video_block">
+                    <input class="videoBox videoBox_size" type="file" name="hosting_video">
+                </div>
+                <div id="img_block">
+                    <button class="videoBox " type="button" onclick="addPicture()">image add</button>
+                    <input multiple="multiple" type="file" name="imgload[]" id="imgload"/>
+                </div>
+                <br/>
+                    <p style="display:inline-block">전체 화면 미리보기</p>
+                <input class="btn btn-nar" type="submit" value="button">
+            </div>
+        </div>
+    </form>
+    <div id="host_col2">
+        <div id="col2_contain">
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../scripts/upload.js"></script>
+</body>
+</html>

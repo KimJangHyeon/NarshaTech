@@ -1,5 +1,5 @@
 from django.db import models
-from login import UserForm
+from .forms import UserForm
 
 # Create your models here.
 class Host(models.Model) :

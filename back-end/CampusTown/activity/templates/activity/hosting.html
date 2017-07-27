@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../stylesheet/header.css">
+    <link rel="stylesheet" href="../stylesheet/hosting.css">
+</head>
+<body>
+<div id="header">
+    <!--<div id="top_color_bar"></div>-->
+    <div id="header_tool_bar">
+        <div id="header_contains">
+            <div id="logo">
+                <form id="logo_form" method="get" action="{{ url_for('go_reserved') }}">
+					<a href="mainPage.html">
+						<img id="img_logo" onclick="document.getElementById('logo_form').submit()" src="../image/logo.png" alt="로고"/>
+						<!--<p id="txt_logo" onclick="document.getElementById('logo_form').submit()">Narsha Tech</p>-->
+					</a>
+                </form>
+            </div>
+            <div id="menu_list">
+                <ul>
+
+                    <li>
+                        <form id="help" method="get" action="{{ url_for('go_reserved')}}">
+                            <p id="header_help" onclick="document.getElementById('help').submit()">help</p>
+                        </form>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+
+                    <li>
+                        <form id="hosting" method="get" action="{{ url_for('go_reserved')}}">
+							<a href="hosting.html">
+								<p id="header_hosting" onclick="document.getElementById('hosting').submit()">hosting</p>
+							</a>
+                        </form>
+                    </li>
+
+                    <li>
+                        <p>|</p>
+                    </li>
+
+                    <li>
+                        <form id="signin" method="get" action="{{ url_for('go_reserved')}}">
+							<a href="sign_in.html">
+								<p id="header_sign_in" onclick="document.getElementById('signin').submit()">sign in</p>
+							</a>
+                        </form>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+
+                    <li>
+                        <form id="signup" method="get" action="{{ url_for('go_reserved')}}">
+							<a href="sign_up.html">
+								<p id="header_sign_up" onclick="document.getElementById('signup').submit()">sign up</p>
+							</a>
+                        </form>
+                    </li>
+
+
+
+            </ul>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div id="bottom_color_bar"></div>
+</div>
+<div id="hosting_body">
+    <div id="hosting_contain">
+        <div id="hosting_contain_ex1">
+            <div id="hosting_title_background"></div>
+            <div id="container_title">
+                <div id="hosting_title">
+                    <p class="imp_level3">Hosting 하셈!!</p>
+                </div>
+                <div id="hosting_explain">
+                    <p class="imp_level1">이건 설명이다. 이건 설명이다.<br/>이건 설명이다<br/>이건 설명이다.</p>
+                </div>
+                <div id="hosting_making_hosting">
+                    <a href="#create-an-experience">트립 만들기</a>
+                </div>
+            </div>
+        </div>
+        <div id="hosting_contain_ex2">
+            <p class="imp_level1">누구나 호스트 할 수 있음!!</p>
+        </div>
+        <div id="hosting_contain_adv">
+            <div id="adv_title">
+                <p class="imp_level3">이거 하면 장점</p>
+            </div>
+            <div id="block_of_adv">
+                <div class="adv_block">
+                    <p class="imp_level2">몰라</p>
+                    <br/>
+                    <p class="imp_level1">몰라몰라모람롸몰마롬롸ㅘ</p>
+                </div>
+                <div class="adv_block">
+                    <p class="imp_level2">몰라</p>
+                    <br/>
+                    <p class="imp_level1">몰라몰라모람롸몰마롬롸ㅘ</p>
+                </div>
+                <div class="adv_block">
+                    <p class="imp_level2">몰라</p>
+                    <br/>
+                    <p class="imp_level1">몰라몰라모람롸몰마롬롸ㅘ</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="method_contain">
+            <div id="block_of_method">
+                <div id="method_title"><p class="imp_level3">신청 방법</p></div>
+                <div class="method_block">
+                    <p class="imp_level2">몰라</p>
+                    <br/>
+                    <p class="imp_level1">몰라몰라모람롸몰마롬롸ㅘ</p>
+                </div>
+                <div class="method_block">
+                    <p class="imp_level2">몰라</p>
+                    <br/>
+                    <p class="imp_level1">몰라몰라모람롸몰마롬롸ㅘ</p>
+                </div>
+                <div class="method_block">
+                    <p class="imp_level2">몰라</p>
+                    <br/>
+                    <p class="imp_level1">몰라몰라모람롸몰마롬롸ㅘ</p>
+                </div>
+                <div class="method_block">
+                    <p class="imp_level2">몰라</p>
+                    <br/>
+                    <p class="imp_level1">몰라몰라모람롸몰마롬롸ㅘ</p>
+                </div>
+            </div>
+        </div>
+        <div class="hosting_split_bar"></div>
+        <div id="hosting_country">
+            <div id="submit_form">
+                <p class="imp_level2">title</p>
+                <input type="hidden" name="hiddenvalue" value="submit">
+                <br>
+                <label class="imp_level1">국가</label>
+                <select class="select_border">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <br><br>
+                <label class="imp_level1">도시</label>
+                <select class="select_border">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select><br><br><br>
+				<a href="host0.html">
+					<input class="btn btn-blue" type="submit" value="Submit">
+				</a>
+                <br>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
