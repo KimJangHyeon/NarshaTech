@@ -24,7 +24,7 @@
     position:fixed;
     width:27%;
     height:90%;
-
+    overflow:auto;
 }
 
 #map_block{
