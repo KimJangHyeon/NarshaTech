@@ -45,6 +45,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
+=======
+    'signup',
+>>>>>>> 9c2210590059bd79b95500fdaf2fb5deb2533b46
 	'login',
 	'main',
 	'activity',
