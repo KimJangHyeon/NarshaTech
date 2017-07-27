@@ -1,62 +1,62 @@
 from django.db import models
-from login.forms import UserForm as User
+from django.contrib.auth.models import User
 
 # Create your models here.
 
 class Activity(models.Model) :
-    index = Model.AutoField()
-    id = Model.ForeignField(User)
-    title = Model.CharField(max_length = 100)
-    category = Model.CharField(max_length = 20)
-    travelDestination = Model.CharField(max_length = 50)
-    travelIntroduction = Model.CharField(max_length = 500)
-    meetingPlace = Model.CharField(max_length = 128)
-    price = Model.FloatField()
-    maximumCapacity = Model.InteterField()
-    additionalInformation = Model.CharField(max_length = 500)
-    readyTime = Model.FloatField()
-    lastReadyTime = Model.FloatField() #준비시간. 이때까지 예약인원이 0명인 경우 여행 계획 취소
-    activityRating = Model.FloatField() #막바지시간. 준비시간에 1명이라도 있었던 경우 다른 사람을 받을 수 있는 마지막 시간.
-    totalHour = Model.FloatField()
+    index = models.AutoField()
+    id = models.ForeignKey(User)
+    title = models.CharField(max_length = 100)
+    category = models.CharField(max_length = 20)
+    activityDestination = models.CharField(max_length = 50)
+    activityIntroduction = models.CharField(max_length = 500)
+    meetingPlace = models.CharField(max_length = 128)
+    price = models.FloatField()
+    maximumCapacity = models.IntegerField()
+    additionalInformation = models.CharField(max_length = 500)
+    readyTime = models.FloatField()
+    lastReadyTime = models.FloatField() #준비시간. 이때까지 예약인원이 0명인 경우 여행 계획 취소
+    activityRating = models.FloatField() #막바지시간. 준비시간에 1명이라도 있었던 경우 다른 사람을 받을 수 있는 마지막 시간.
+    totalHour = models.FloatField()
 
 class ActivityLanguage(models.Model) :
-    index = Model.AutoField()
-    activityIndex = Model.ForeignField(Activity)
-    language = Model.CharField(max_length = 30)
+    index = models.AutoField()
+    activityIndex = models.ForeignKey(Activity)
+    language = models.CharField(max_length = 30)
 
 class ActivitySchedule(models.Model) :
-    index = Model.AutoField()
-    activityIndex = Model.ForeignField(Activity)
-    location = Model.CharField(max_length = 128)
-    startYear = Model.InteterField()
-    startMonth = Model.InteterField()
-    startHour = Model.InteterField()
-    startMinute = Model.InteterField()
-    endYear = Model.InteterField()
-    endMonth = Model.InteterField()
-    endDay = Model.InteterField()
-    endHour = Model.InteterField()
-    endMinute = Model.InteterField()
-    url = Model.URLField()
-    introduction = Model.CharField(max_length = 500)
+    index = models.AutoField()
+    activityIndex = models.ForeignKey(Activity)
+    location = models.CharField(max_length = 128)
+    startYear = models.IntegerField()
+    startMonth = models.IntegerField()
+    startHour = models.IntegerField()
+    startMinute = models.IntegerField()
+    endYear = models.IntegerField()
+    endMonth = models.IntegerField()
+    endDay = models.IntegerField()
+    endHour = models.IntegerField()
+    endMinute = models.IntegerField()
+    url = models.URLField()
+    introduction = models.CharField(max_length = 500)
 
 class ActivityPicture(models.Model) :
-    index = Model.AutoField()
-    activityIndex = Model.ForeignField(Activity)
-    url = Model.URLField()
+    index = models.AutoField()
+    activityIndex = models.ForeignKey(Activity)
+    url = models.URLField()
 
 class HashTag(models.Model) :
-    id = Model.AutoField()
-    hash = Model.CharField(max_length = 20)
-    activityIndex = Model.ForeignField(Activity)
+    id = models.AutoField()
+    hash = models.CharField(max_length = 20)
+    activityIndex = models.ForeignField(Activity)
 
 class ActivityReview(models.Model) :
-    index = Model.AutoField()
-    activityIndex = Model.ForeignField(Activity)
-    id = Model.ForeignField(User)
-    review = Model.CharField(max_length = 300)
-    date = Model.DateTimeField()
-    rating = Model.FloatField(default = 0.00)
+    index = models.AutoField()
+    activityIndex = models.ForeignField(Activity)
+    id = models.ForeignField(User)
+    review = models.CharField(max_length = 300)
+    date = models.DateTimeField()
+    rating = models.FloatField(default = 0.00)
 
 """
 CREATE TABLE activity (
