@@ -21,4 +21,3 @@ def signin(request):
     else:
         form = LoginForm()
         return render(request, 'login/login.html', {'form': form})
-# Create your views here.
