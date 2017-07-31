@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'signup',
 	'login',
 	'main',
-	'activity'
+	'activity',
+	#'hosting',
 ]
 
 MIDDLEWARE = [

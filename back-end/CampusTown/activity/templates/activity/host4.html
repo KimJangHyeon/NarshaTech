@@ -45,8 +45,9 @@
     </div>
 </div>
 <div id="contain">
-    <form id="host4_form" method="post" action="url_for{{name()}}" enctype="multipart/form-data">
-        <div id="host_col0">
+    <form id="host4_form" method="post" action="/activity/4/add/" enctype="multipart/form-data">
+      {% csrf_token %}        
+      <div id="host_col0">
             <div id="col0_contain">
                 <!--왜 쓰는 거지-->
                 <input type="hidden" name="hiddenvalue" value='host4'>
