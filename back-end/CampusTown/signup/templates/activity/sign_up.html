@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Narsha Tech</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheet/header.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheet/sign_in_up.css">
+</head>
+<body>
+<div id="header">
+    <!--<div id="top_color_bar"></div>-->
+    <div id="header_tool_bar">
+        <div id="header_contains">
+            <div id="logo">
+                <form id="logo_form" method="get" action="{{ url_for('go_reserved') }}">
+                    <img id="img_logo" onclick="document.getElementById('logo_form').submit()" src="../image/logo.png" alt="로고"/>
+                    <!--<p id="txt_logo" onclick="document.getElementById('logo_form').submit()">Narsha Tech</p>-->
+                </form>
+            </div>
+            <div id="menu_list">
+                <ul>
+                    <li>
+                        <form id="help" method="get" action="{{ url_for('go_reserved')}}">
+                            <p id="header_help" onclick="document.getElementById('help').submit()">help</p>
+                        </form>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+
+                    <li>
+                        <form id="hosting" method="get" action="{{ url_for('go_reserved')}}">
+                            <p id="header_hosting" onclick="document.getElementById('hosting').submit()">hosting</p>
+
+                    </li>
+
+                    <li>
+                        <p>|</p>
+                    </li>
+                    <li>
+                        <form id="signin" method="get" action="{{ url_for('go_reserved')}}">
+                            <p id="header_sign_in" onclick="document.getElementById('signin').submit()">sign in</p>
+                        </form>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+
+                    <li>
+                        <form id="signup" method="get" action="{{ url_for('go_reserved')}}">
+                            <p id="header_sign_up" onclick="document.getElementById('signup').submit()">sign up</p>
+                        </form>
+                    </li>
+
+
+
+            </ul>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div id="bottom_color_bar"></div>
+</div>
+
+<div id="sign_up">
+    <div id="background_up" />
+    <div id="signup_content" class="content">
+        <div id="wrapper_login_form" class="box">
+            <form id="login_form" method="post" action=".">{%csrf_token%}
+		
+                <a>회원가입</a><br><br/>
+		
+                <input type="hidden" name="hiddenvalue" value='signup'>
+                {{ form.username.label_tag}} 
+		{{form.username}}
+                <!--<input class="input_border" type="text" name="uid" id="uid">--><br><br/>
+                {{form.password1.label_tag}}
+		{{form.password1}}
+		<br><br/>
+		{{form.password2.label_tag}}
+		{{form.password2}}
+                <!-- <input class="input_border" type="password" name="pw" id="pw">--><br><br/>
+                {{form.email.label_tag}}
+		{{form.email}}
+                <!--<input class="input_border" type="text" name="email" id="email">--><br><br/>
+                {{form.last_name.label_tag}} 
+		{{form.last_name}}
+                <!-- <input class="input_border" type="text" name="lastName" id="lastName">--><br/><br/>
+                {{form.first_name.label_tag}} 
+		{{form.first_name}}
+                <!-- <input class="input_border" type="text" name="firstName" id="firstName">--><br/><br/>
+                {{form.phone.label_tag}}
+		{{form.phone}}<br/><br/>
+                <!-- <input class="input_border" type="text" name="phone" id="phone">--> <br/><br/>
+                {{form.gender.label_tag}}
+		{{form.gender}}
+                <!--<input type="radio" name="gender" id="genderMan" value="HTML">남
+                <input type="radio" name="gender" id="genderWoman" value="CSS">여-->
+                <br/><br/>
+                {{form.birth.label_tag}}
+		{{form.birth}}<br><br/>
+                <!-- <input class="input_border" type="text" name="birth" id="birth">-->
+                <input class="btn btn-blue" type="submit" value="Sign Up">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
