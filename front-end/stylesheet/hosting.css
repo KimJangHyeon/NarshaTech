@@ -258,7 +258,7 @@ select.select_border{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    display: block;
+	display: none;
     width: 100%;
     text-align: center;
 }
