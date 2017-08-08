@@ -2,52 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16c2be05-0fe7-4ffb-ab56-482519da63a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/templates/image/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/templates/image/number1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/templates/image/number2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/templates/image/number3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/activity/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/login/static/css/header.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/login/static/css/hosting.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/login/static/css/hosting_sidebar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/login/static/css/product.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/login/static/css/sign_in_up.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/login/static/css/slideshow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/migrations/0002_main_rating.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/static/css/header.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/static/css/hosting.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/static/css/hosting_sidebar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/static/css/product.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/static/css/sign_in_up.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/static/css/slideshow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/templates/main/content.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/templates/main/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/templates/scripts/slideshow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/main/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/CampusTown/templates/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/back-end/getLoginInfo.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/back-end/readme.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/CampusTown/login/forms.py" afterPath="$PROJECT_DIR$/back-end/CampusTown/login/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/CampusTown/login/templates/login/login.html" afterPath="$PROJECT_DIR$/back-end/CampusTown/login/templates/login/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/CampusTown/login/views.py" afterPath="$PROJECT_DIR$/back-end/CampusTown/login/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/CampusTown/mysite/settings.py" afterPath="$PROJECT_DIR$/back-end/CampusTown/mysite/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/CampusTown/mysite/urls.py" afterPath="$PROJECT_DIR$/back-end/CampusTown/mysite/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/html/host5.html" afterPath="$PROJECT_DIR$/front-end/html/host5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/scripts/map.js" afterPath="$PROJECT_DIR$/front-end/scripts/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/scripts/slideshow.js" afterPath="$PROJECT_DIR$/front-end/scripts/slideshow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/stylesheet/host4_5.css" afterPath="$PROJECT_DIR$/front-end/stylesheet/host4_5.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/stylesheet/hosting_form_three.css" afterPath="$PROJECT_DIR$/front-end/stylesheet/hosting_form_three.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/stylesheet/textstyle.css" afterPath="$PROJECT_DIR$/front-end/stylesheet/textstyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/html/host4.html" afterPath="$PROJECT_DIR$/front-end/html/host4.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,12 +14,54 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hosting.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hosting.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front-end/html/hosting.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
               <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my_page.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-end/html/my_page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="54" lean-forward="false" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my_page.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-end/stylesheet/my_page.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="host4.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front-end/html/host4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="59" column="82" lean-forward="false" selection-start-line="59" selection-start-column="82" selection-end-line="59" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="host5.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-end/html/host5.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="966">
+              <caret line="75" column="31" lean-forward="false" selection-start-line="73" selection-start-column="20" selection-end-line="75" selection-end-column="31" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,7 +132,6 @@
         <option value="$PROJECT_DIR$/front-end/stylesheet/input.css" />
         <option value="$PROJECT_DIR$/front-end/scripts/upload.js" />
         <option value="$PROJECT_DIR$/front-end/html/a.html" />
-        <option value="$PROJECT_DIR$/front-end/html/host4.html" />
         <option value="$PROJECT_DIR$/front-end/html/sign_up.html" />
         <option value="$PROJECT_DIR$/front-end/scripts/sign_form.js" />
         <option value="$PROJECT_DIR$/front-end/html/test.html" />
@@ -150,6 +146,9 @@
         <option value="$PROJECT_DIR$/front-end/stylesheet/hostN.css" />
         <option value="$PROJECT_DIR$/front-end/stylesheet/textstyle.css" />
         <option value="$PROJECT_DIR$/front-end/html/hostN.html" />
+        <option value="$PROJECT_DIR$/front-end/html/my_page.html" />
+        <option value="$PROJECT_DIR$/front-end/stylesheet/my_page.css" />
+        <option value="$PROJECT_DIR$/front-end/html/host4.html" />
       </list>
     </option>
   </component>
@@ -162,7 +161,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1932" />
+    <option name="width" value="1938" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
@@ -191,6 +190,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="NarshaTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NarshaTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NarshaTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front-end" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -444,10 +461,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24555904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24479167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -502,20 +519,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front-end/html/sign_up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="117" lean-forward="false" selection-start-line="15" selection-start-column="117" selection-end-line="15" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/stylesheet/sign_in_up.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-end/stylesheet/header.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="989">
@@ -681,20 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/html/host5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="75" column="31" lean-forward="false" selection-start-line="73" selection-start-column="20" selection-end-line="75" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/html/host4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2001">
-          <caret line="87" column="72" lean-forward="false" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-end/html/hostN.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -839,6 +828,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/html/host5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="75" column="31" lean-forward="false" selection-start-line="73" selection-start-column="20" selection-end-line="75" selection-end-column="31" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/html/my_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="54" lean-forward="false" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/stylesheet/my_page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/html/host4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="59" column="82" lean-forward="false" selection-start-line="59" selection-start-column="82" selection-end-line="59" selection-end-column="82" />
           <folding />
         </state>
       </provider>
