@@ -7,23 +7,13 @@
 	<link rel="stylesheet" href="../stylesheet/host0_1_2_8.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script>
-        function no_off() {
-            if(document.getElementById('checkbox_auto').checked){
-                add_div()
-            }else{
-                remove_div()
-            }
+        $(document).ready(function(){
+            $("#checkbox_auto").click(function(){
+                if($("#checkbox_auto").is(':checked')){$("#testD").fadeIn();}
+                else{$("#testD").fadeOut();}
 
-        }
-        function add_div(){
-            var div = document.createElement('div');
-            div.innerHTML = document.getElementById('test').innerHTML;
-            document.getElementById('field').appendChild(div);
-        }
-        function remove_div(){
-            //document.getElementById('field').removeChild(document.);
-            $('#field').empty();
-        }
+            });
+        });
     </script>
 </head>
 <body>
@@ -74,14 +64,11 @@
 		</div>
 		<div id="host1_check_btn">
 			<form id="host1_form" method="get" action="host1.jsp">		<!-- 서버에서 host2으로 연결 --->
-				<input type="checkbox" name="autocheck" id="checkbox_auto" value="on" onchange="no_off()"> <label for="checkbox_auto">라벨을 입력해주세요</label>
-				<div style="display:none">
+				<input type="checkbox" name="autocheck" id="checkbox_auto" value="on"> <label for="checkbox_auto">라벨을 입력해주세요</label>
+				<div id="testD" style="display:none">
                     <div id="test">
                         <button class="btn btn-blue" type="button">Submit</button>
                     </div>
-                </div>
-				<div id="field">
-
                 </div>
 			</form>
 		</div>
