@@ -51,6 +51,7 @@ def add_host4(request) :
     #if request.POST.has_key('htitle') == False :
     #    return HttpResponse('input title')
     else:
+        #아직 글자수 처리 안함.
         title = request.POST('title')
     #if request.POST.has_key('htag') == False :
     if 'htag' in key == False :

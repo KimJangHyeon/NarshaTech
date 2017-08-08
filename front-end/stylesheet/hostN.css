@@ -1,0 +1,14 @@
+#col0_first{
+    position:absolute;
+    max-width:calc(100% - 80px);
+    height:calc(100% - 60px);
+    margin:60px 20px 0 60px;
+}
+
+#col1_first{
+    position:absolute;
+    width:calc(100% - 30px);
+    height:calc(100% - 60px);
+    margin:60px 10px 0 20px;
+    padding:75px 0 0 0;
+}

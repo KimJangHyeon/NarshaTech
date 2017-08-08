@@ -7,7 +7,7 @@ class Activity(models.Model) :
     user_id = models.ForeignKey(User)
     title = models.CharField(max_length = 100)
     category = models.CharField(max_length = 20)
-    activityLocation = models.CharField(max_length = 50)
+    gatheringityLocation = models.CharField(max_length = 50)
     activityIntroduction = models.CharField(max_length = 500)
     vehicle = models.CharField(max_length = 30)
     meetingPlace = models.CharField(max_length = 128)
