@@ -205,7 +205,7 @@ function placeMarker(map, location) {
     //     content: 'Latitude: ' + location.lat() + '<br>Longitude: ' + location.lng()
     // });
     // infowindow.open(map,marker);
-    add_div();
+    add_div(location);
   //////////////////////////////지우기///////////////////////////////
     google.maps.event.addListener(marker,'click',function() {
         var con_test = confirm("ㄹㅇ?\n지우면 '소개'의 마지막 인덱스도 사라짐");
@@ -219,15 +219,22 @@ function placeMarker(map, location) {
 
 
 
-function add_div(){
+function add_div(location){
+    // alert(location);
     var div = document.createElement('div');
+    // var div1= document.createElement('div');
+
     div.innerHTML = document.getElementById('intro_block').innerHTML;
+    // div1.innerHTML = document.getElementById('intro_place').innerHTML;
+
+
     document.getElementById('col1_contain5').appendChild(div);
+    // document.getElementById('intro_container').appendChild(div1);
 }
 
 
 
-function remove_div(){
+function remove_div(location){
     //col1_contain5 요소중 마지막 div 지우기
     //document.getElementById('field').removeChild(obj.parentNode);
     $("#col1_contain5").find('div').last().remove();

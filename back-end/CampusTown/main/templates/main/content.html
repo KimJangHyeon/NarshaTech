@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<script type="text/javascript" src="../scripts/slideshow.js"></script>
+
+<div class="slider" id="main-slider"><!-- outermost container element -->
+	<div class="slider-wrapper"><!-- innermost wrapper element -->
+		<img src="../image/number1.png" alt="First" class="slide" /><!-- slides -->
+		<img src="../image/number2.png" alt="Second" class="slide" />
+		<img src="../image/number3.png" alt="Third" class="slide" />
+	</div>
+</div>
+<div>
+
+<div class="containerSlide">
+  {% for content in contents %}
+      <div class="container_j">
+          <a href="https://trello.com/b/reuaCfXg/campustown" target="_blank" rel="noopener noreferer" class="link_j">
+              <img src={{content.image}}>
+              <div class = "product_explain">
+                  <div class="twoLineTitle">
+                      <span><p>{{content.title}}</p></span>
+                      <div class="inline_g">
+                          <span class="text_5"><p>{{content.text}}</p></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="product_score">
+                  <div ><p>{{content.rating}}</p></div>
+              </div>
+          </a>
+      </div>
+    {% endfor %}
+</div>
+{% endblock %}

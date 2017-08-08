@@ -39,8 +39,8 @@ test.addEventListener();
 
 
 showSlides(slideIndex);
-
 function plusSlides(n) {
+
   showSlides(slideIndex += n);
 }
 

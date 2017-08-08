@@ -46,6 +46,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'activity',
+<<<<<<< HEAD
+=======
+	'login',
+	'main',
+>>>>>>> a6b4c65d4039d48c4984877e68f5d3dc39e48884
 ]
 
 MIDDLEWARE = [
@@ -63,7 +68,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ os.path.join(BASE_DIR, 'templates') ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -88,8 +93,13 @@ DATABASES = {
 #        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 	'ENGINE': 'django.db.backends.mysql',
 	'NAME':'campus',
+<<<<<<< HEAD
 	'USER':'kangsj123',
 	'PASSWORD': 'ksj1203091678',
+=======
+	'USER':'root',
+	'PASSWORD': 'addressbook123',
+>>>>>>> a6b4c65d4039d48c4984877e68f5d3dc39e48884
 	'HOST': 'localhost',
 	'PORT': '',
     }

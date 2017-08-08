@@ -1,0 +1,43 @@
+
+.containerSlide{
+    max-width: 100%;
+    margin:auto;
+    height:auto;
+    margin: 0 10px 0 10px;
+    padding: 30px 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+.container_j{
+    height: 300px;
+    width: 200px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container_j a {
+    text-decoration: none;
+
+}
+
+.container_j p{
+    color: black;
+}
+
+.container_j>a>img{
+    width:100%;
+    height:100%;
+}
+
+.product_explain{
+    margin-top: 8px;
+}
+
+.inline_g{
+    margin-left: 4px;
+}
+
+.product_score{
+    margin-top: 4px;
+}
+<!-- 이 이외 클래스들은 혹시 나중에 쓰일지 몰라서 안 지웠는데 필요없으면 후에 수정하는 것으로 할게요 --->
