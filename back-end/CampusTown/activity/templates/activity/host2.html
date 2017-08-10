@@ -50,32 +50,43 @@
 
 <div id = "hosting_form_two">
     <div class="host2_f_one">
-		<form id="host2_form" method="get" action="host2.jsp">		<!-- 서버에서 host3으로 연결 --->
+		<form id="host2_form" method="get" action="host2.jsp">{% csrf_token %}		<!-- 서버에서 host3으로 연결 --->
       <!-- language -->
 			<div>
-				<h2>제목</h2>
-				<p class="host_two_text">본문</p>
-				<br>
-					<select class="select_border">
-						<option value="volvo">Volvo</option>
-						<option value="saab">Saab</option>
-						<option value="mercedes">Mercedes</option>
-						<option value="audi">Audi</option>
-					</select>
-				<br>
+				{{form.category.errors}}
+				<h2>언어</h2>
+				{{form.category}}
+				<!--<br>
+					<select name="language">
+						<option value="Korean">Korean</option>
+						<option value="English">English</option>
+						<option value="Japanese">Japanese</option>
+						<option value="Chinese">Chinese</option>
+						
+			
+					</select> 
+				<br> -->
 			</div>
       <!-- category -->
 			<div>
-				<h2>제목</h2>
-				<p class="host_two_text">본문</p>
-				<br>
-					<select class="select_border">
-						<option value="volvo">Volvo</option>
-						<option value="saab">Saab</option>
-						<option value="mercedes">Mercedes</option>
-						<option value="audi">Audi</option>
+				<h2>카테고리</h2>
+
+				<!--<br>
+					<select name="category">
+						<option value="art/design">art/design</option>
+						<option value="fashion">fashion</option>
+						<option value="entertainment">entertainment</option>
+						<option value="sports">sports</option>
+						<option value="well-being">well-being</option>
+						<option value="nature">nature</option>
+						<option value="food">food</option>
+						<option value="life style">life style</option>
+						<option value="history">history</option>
+						<option value="music">music</option>
+						<option value="business">business</option>
+						<option value="bar/club">bar/club</option>
 					</select>
-				<br>
+				<br>-->
 			</div>
 			<div>
 				<input class="btn btn-blue" id="host2_btn" type="button" value="Button">

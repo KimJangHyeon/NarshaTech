@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'signup',
 	'login',
 	'main',
 	'activity'
@@ -92,7 +91,7 @@ DATABASES = {
 	'ENGINE': 'django.db.backends.mysql',
 	'NAME':'campus',
 	'USER':'root',
-	'PASSWORD': 'addressbook123',
+	'PASSWORD': 'ksj1203091678',
 	'HOST': 'localhost',
 	'PORT': '',
     }
