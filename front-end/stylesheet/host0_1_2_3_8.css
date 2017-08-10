@@ -16,6 +16,72 @@ form{
 	margin-top: 50px;
 }
 
+#host3_email{
+	margin: 0px;
+	display: inline-block;
+	width: 250px;
+}
+
+#host3_email_div{
+	display: inline-block;
+}
+
+#host3_email_address{
+	margin: 0px;
+	vertical-align: top;
+	width: 150px;
+	float: right;
+}
+
+#host3_form2{
+	margin-top: 50px;
+}
+
+#host3_authen_num{
+	margin-top: 0px;
+	width: 250px;
+	display: inline-block;
+}
+
+#btn3_2{
+	display: inline-block;
+	float: none;
+}
+
+#profile {
+	margin-top: 20px;
+}
+
+#host3_pic{
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	vertical-align: top;
+}
+
+#host3_text{
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+}
+
+#host3_info{
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	vertical-align: top;
+}
+
+#host3_img{
+	width: 100%;
+	height: 60%;
+	border: solid 1px black;
+}
+
+#host3_text2{
+	
+}
+
 #host8_btn {
 	margin-top: 100px;
 }
@@ -153,7 +219,7 @@ form{
     background-image: linear-gradient(-180deg, #404584 30%, #404584 30%);
 }
 
-select.select_border{
+.select_border{
     min-height: 14px;
     padding: 6px 8px;
     font-size: 12px;
