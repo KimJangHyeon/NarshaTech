@@ -33,7 +33,8 @@ CATEGORIES=(
 class ActivityInfo(models.Model) :
     user_id = models.ForeignKey(User)
     title = models.CharField(max_length = 100,null=True, blank=True) 
-    category = models.CharField(max_length = 20,choices=CATEGORIES,default='art/design') 
+    category = models.CharField(max_length = 20,choices=CATEGORIES,default='art/design')
+    language=models.CharField(max_length=30, choices=LANGUAGE,default='Korean') 
     activityLocation = models.CharField(max_length = 50,null=True, blank=True) 
     activityIntroduction = models.CharField(max_length = 500,null=True, blank=True) 
     vehicle = models.CharField(max_length = 30,null=True, blank=True) 
@@ -46,9 +47,9 @@ class ActivityInfo(models.Model) :
     activityRating = models.FloatField(default=0.0) #막바지시간. 준비시간에 1명이라도 있었던 경우 다른 사람을 받을 수 있는 마지막 시간. 
     totalTime = models.FloatField(default=0.0) 
 
-class ActivityLanguage(models.Model) :
-    activityIndex = models.ForeignKey(ActivityInfo) 
-    language = models.CharField(max_length = 30,choices=LANGUAGE,default='Korean') 
+#class ActivityLanguage(models.Model) :
+ #   activityIndex = models.ForeignKey(ActivityInfo) 
+  #  language = models.CharField(max_length = 30,choices=LANGUAGE,default='Korean') 
 
 class ActivitySchedule(models.Model) :
     activityIndex = models.ForeignKey(ActivityInfo)

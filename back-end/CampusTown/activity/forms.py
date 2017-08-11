@@ -1,5 +1,5 @@
 from django import forms
-from .models import ActivityInfo, ActivityLanguage
+from .models import ActivityInfo
 
 LANGUAGE=(
 	('Korean','Korean'),
@@ -25,16 +25,16 @@ CATEGORIES=(
 
 class ActivityForm(forms.ModelForm):
 	category=forms.ChoiceField(choices=CATEGORIES, required=True)
-
+	language=forms.ChoiceField(choices=LANGUAGE, required=True)
 	class Meta:
 		model=ActivityInfo
-		fields=['category']
+		fields=['category','language']
 
-class ActivityLanguageForm(forms.ModelForm):
-	language=forms.ChoiceField(choices=LANGUAGE, required=True)
-	
-	class Meta:
-		model=ActivityLanguage
-		fields=['language']
+#class ActivityLanguageForm(forms.ModelForm):
+#	language=forms.ChoiceField(choices=LANGUAGE, required=True)
+#	
+#	class Meta:
+#		model=ActivityLanguage
+#		fields=['language']
 
 

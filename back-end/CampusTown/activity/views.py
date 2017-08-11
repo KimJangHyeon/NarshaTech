@@ -3,24 +3,28 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic import FormView
-from .models import ActivityInfo,ActivityLanguage
-from .forms import ActivityForm, ActivityLanguageForm
+from .models import ActivityInfo
+from .forms import ActivityForm
 
-class host2_category(FormView):
-	templat_name='host2.html'
-	success_url='/success/'
-	form_class=ActivityForm
+#class host2_category(FormView):
+#	templat_name='host2.html'
+#	success_url='/success/'
+#	form_class=ActivityForm
+#
+#	def form_valid(self, form):
+#		return HttpResponse("input success.")
 
-	def form_valid(self, form):
-		return HttpResponse("input success.")
-
-class host2_language(FormView):
-	template_name='host2.html'
-	success_url='/success/'
-	form_class=ActivityLanguageForm
-	
-	def form_valid(self, form):
-		return HttpResponse("input success.")
+def host2(request):
+	if request.method=="POST":
+		form=ActivityForm(request.POST)
+		if form.is_valid():
+			new_activity=ActivityInfo.objects.create(category=form.cleaned_data['category'],language=form.cleaned_data['language'])
+			new_activity.save()
+			return HttpResponseRedirect('/')
+	else:
+		form=ActivityForm()
+	return render(request,'activity/host2.html',{'form':form})	
+ 
 
 #class host0(FormView):
 
