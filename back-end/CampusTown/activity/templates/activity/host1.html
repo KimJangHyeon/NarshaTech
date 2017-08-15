@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../stylesheet/hosting_sidebar.css">
-	<link rel="stylesheet" href="../stylesheet/host0_1_2_8.css">
+	<link rel="stylesheet" href="../stylesheet/host0_1_2_3_8.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+        $(document).ready(function(){
+            $("#checkbox_auto").click(function(){
+                if($("#checkbox_auto").is(':checked')){$("#testD").fadeIn();}
+                else{$("#testD").fadeOut();}
+            });
+        });
+    </script>
 </head>
 <body>
 <div id="side_bar">
@@ -19,10 +28,8 @@
 				<p>number1</p>
 			</a>
         </div>
-        <div class="form_number">
-		<a href="host1.html">
-            		<p>number1</p>
-		</a>
+        <div class="form_number_selected">
+            <p>number1</p>
         </div>
         <div class="form_number">
             <p>number1</p>
@@ -47,7 +54,6 @@
         </div>
     </div>
 </div>
-<!-- agrdd -->
 <div id = "hosting_form_two">
     <div class="host_f_two">
 		<div id="host1_text">
@@ -57,8 +63,14 @@
 		</div>
 		<div id="host1_check_btn">
 			<form id="host1_form" method="get" action="host1.jsp">		<!-- 서버에서 host2으로 연결 --->
-				<input type="checkbox" name="autocheck" id="checkbox_auto"> <label for="checkbox_auto">라벨을 입력해주세요</label>
-					<input class="btn btn-blue" type="button" value="Button">
+				<input type="checkbox" name="autocheck" id="checkbox_auto" value="on"> <label for="checkbox_auto">라벨을 입력해주세요</label>
+				<div id="testD" style="display:none">
+                    <div id="test">
+			<a href= "{% url 'hosting language' %}">
+                        <button class="btn btn-blue" type="button">Submit</button>
+			</a>
+                    </div>
+                </div>
 			</form>
 		</div>
     </div>
@@ -68,6 +80,5 @@
 		</div>
 	</div>
 </div>
-
 </body>
 </html>

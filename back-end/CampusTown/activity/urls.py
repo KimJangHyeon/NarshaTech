@@ -1,11 +1,11 @@
 from django.conf.urls import include, url
 from django.contrib import admin
-from activity.views import host2
+from activity.views import host2,host1
 from . import views
 
 urlpatterns = [
    # url(r'^activity/$', views.host0, name='hosting'),
-   # url(r'^activity/1$', views.host1, name='hosting'),
+   url(r'^activity/1/$',views.host1,name='host1'),
    url(r'^activity/2$', views.host2, name='hosting language'),
    #url(r'^activity/2/$', views.host2_category, name='hosting category'),
    # url(r'^activity/3$', views.host3, name='hosting'),
