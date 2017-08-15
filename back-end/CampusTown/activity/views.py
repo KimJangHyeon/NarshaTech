@@ -5,7 +5,7 @@ from django.http import HttpResponse
 from django.views.generic import FormView
 from .models import ActivityInfo
 from .forms import ActivityForm
-from django.shortcuts import render, get_object_or_404
+
 
 #class host2_category(FormView):
 #	templat_name='host2.html'
@@ -29,6 +29,11 @@ def host2(request):
 def host1(request):
 	return render(request,'activity/host1.html',{})	
 
+def host5(request):
+	return render(request,'activity/host5.html',{})
+
+def host4(request):
+	return render(request,'activity/host4.html',{})
 #class host0(FormView):
 	
 

@@ -55,48 +55,41 @@
             <div id="map_block">
                 <div id="map"></div>
             </div>
-            <div class="intro">
-
-            </div>
-            <div class="intro">
-
-            </div>
-            <div class="intro">
-
+            <div id="intro_container">
+                <div style="display:none;">
+                    <div id="intro_place">
+                        <p class="imp_level2"></p>
+                        <p class="imp_level1"></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <div id="host_col1">
         <div id="col1_contain5">
-            <div class="intro_block">
-                <p class="imp_level1">소개</p>
-                <textarea class="imp_level0" style="width:100%;height:180px;">
+            <div style="display:none;">
+                <div id="intro_block">
+                    <p class="imp_level1">소개</p>
+                    <textarea class="imp_level0" style="width:100%;height:180px;">
 
-                </textarea>
-            </div>
-            <div class="intro_block">
-                <p class="imp_level1">소개</p>
-                <textarea class="imp_level0" style="width:100%;height:180px;">
-
-                </textarea>
-            </div>
-            <div class="intro_block">
-                <p class="imp_level1">소개</p>
-                <textarea class="imp_level0" style="width:100%;height:180px;">
-
-                </textarea>
+                    </textarea>
+                </div>
             </div>
         </div>
     </div>
-    <div id="host_col2">
 
+    <div id="host_col2">
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
 <script type="text/javascript" src="../scripts/map.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0YyDiima_RM8NSbgLm3HwdIXfQUV9Zyo&libraries=visualization&callback=initMap">
-    </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7KBy5GlwzwE0E-oIplx_GZeGE0Rxm_L0&callback=myMap"></script>
+<!--<script async defer-->
+        <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7KBy5GlwzwE0E-oIplx_GZeGE0Rxm_L0&libraries=visualization&callback=initMap">-->
+<!--</script>-->
 <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0YyDiima_RM8NSbgLm3HwdIXfQUV9Zyo&callback=initMap"></script>-->
 </body>
 </html>
