@@ -31,7 +31,7 @@ CATEGORIES=(
 	
 
 class ActivityInfo(models.Model) :
-    user_id = models.ForeignKey(User)
+    user_id = models.ForeignKey(User,null=True, blank=True)
     title = models.CharField(max_length = 100,null=True, blank=True) 
     category = models.CharField(max_length = 20,choices=CATEGORIES,default='art/design')
     language=models.CharField(max_length=30, choices=LANGUAGE,default='Korean') 
@@ -39,13 +39,13 @@ class ActivityInfo(models.Model) :
     activityIntroduction = models.CharField(max_length = 500,null=True, blank=True) 
     vehicle = models.CharField(max_length = 30,null=True, blank=True) 
     meetingPlace = models.CharField(max_length = 128,null=True, blank=True) 
-    price = models.FloatField(default=0.0) 
-    maximumCapacity = models.IntegerField(default=0) 
+    price = models.FloatField(default=0.0,null=True, blank=True) 
+    maximumCapacity = models.IntegerField(default=0,null=True, blank=True) 
     additionalInformation = models.CharField(max_length = 500,null=True, blank=True) 
-    readyTime = models.FloatField(default=0.0) 
-    lastReadyTime = models.FloatField(default=0.0) #준비시간. 이때까지 예약인원이 0명인 경우 여행 계획 취소 
-    activityRating = models.FloatField(default=0.0) #막바지시간. 준비시간에 1명이라도 있었던 경우 다른 사람을 받을 수 있는 마지막 시간. 
-    totalTime = models.FloatField(default=0.0) 
+    readyTime = models.FloatField(default=0.0,null=True, blank=True) 
+    lastReadyTime = models.FloatField(default=0.0,null=True, blank=True) #준비시간. 이때까지 예약인원이 0명인 경우 여행 계획 취소 
+    activityRating = models.FloatField(default=0.0,null=True, blank=True) #막바지시간. 준비시간에 1명이라도 있었던 경우 다른 사람을 받을 수 있는 마지막 시간. 
+    totalTime = models.FloatField(default=0.0,null=True, blank=True) 
 
 #class ActivityLanguage(models.Model) :
  #   activityIndex = models.ForeignKey(ActivityInfo) 

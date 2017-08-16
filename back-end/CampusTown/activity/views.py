@@ -3,29 +3,30 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic import FormView
+from django.views.generic import TemplateView
 from .models import ActivityInfo
 from .forms import ActivityForm
+from django.shortcuts import render, redirect
 
-
-#class host2_category(FormView):
-#	templat_name='host2.html'
-#	success_url='/success/'
-#	form_class=ActivityForm
-#
-#	def form_valid(self, form):
-#		return HttpResponse("input success.")
 
 def host2(request):
-	if request.method=="POST":
+	if request.method=='POST':
+	
 		form=ActivityForm(request.POST)
 		if form.is_valid():
-			new_activity=ActivityInfo.objects.create(category=form.cleaned_data['category'],language=form.cleaned_data['language'])
+			category=request.POST.get('category','')
+			language=request.POST.get('language','')
+			new_activity=ActivityInfo(category=category, language=language)
 			new_activity.save()
-			return HttpResponseRedirect('/')
+			return HttpResponseRedirect(reverse('host2'))
 	else:
 		form=ActivityForm()
-	return render(request,'activity/host2.html',{'form':form})	
- 
+
+	return render(request,'activity/host2.html',{'form':form})
+	
+def host4(request):
+	return render(request,'activity/host4.html',{'form':form}) 
+
 def host1(request):
 	return render(request,'activity/host1.html',{})	
 
