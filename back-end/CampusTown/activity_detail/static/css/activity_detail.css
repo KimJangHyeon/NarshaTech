@@ -20,8 +20,12 @@ div {
 
 #right_display {
   width: 50%;
-  float: left;
+  float: right;
   display: inline-block;
+}
+
+#bookmark {
+  
 }
 
 .detail_container {
@@ -70,6 +74,22 @@ div {
 
 #host_name {
   font-size: 20px;
+}
+
+#price {
+
+}
+
+#photo {
+
+}
+
+#ranking {
+
+}
+
+.sharing {
+
 }
 
 .link {
