@@ -7,6 +7,23 @@ body {
 div {
 }
 
+#total_display {
+  width: 100%;
+
+}
+
+#left_dislpay {
+  width: 50%;
+  float: left;
+  display: inline-block;
+}
+
+#right_display {
+  width: 50%;
+  float: left;
+  display: inline-block;
+}
+
 .detail_container {
  border-bottom: solid 0.5px black;
 }
@@ -16,7 +33,7 @@ div {
 }
 
 #title {
-  display: inline-block;
+  display: block;
   font-size: 35px;
   width: 100%;
   font-weight:bold;
@@ -24,12 +41,12 @@ div {
 }
 
 .text_description {
-  display: inline-block;
+  display: block;
   font-size: 18px;
 }
 
 .text_description_title {
-  display: inline-block;
+  display: block;
   font-size: 25px;
   font-weight: bold;
 }
@@ -44,6 +61,7 @@ div {
 }
 
 .recommended_container {
+  clear: left;
   border-bottom: solid 0.5px black;
 }
 
