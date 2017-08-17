@@ -1,1 +1,186 @@
 {% extends 'base.html' %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/activity_detail.css' %}">
+
+<div class="detail_container">
+  <div class="outline_container">
+    <div class="title">
+      <p>
+        {{activity_detail.title}}
+      </p>
+    </div>
+    <div class="text_description">
+        <p>
+          {{activity_detail.location}}
+        </p>
+    </div>
+    <div class="hash_tag_container">
+      {% for hash in hashtags %}
+        <div id="hash_tag">
+          {{hash}}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="content_container"> <!-- host and outline -->
+    <div class="host_container_sub">
+      <div class="host_name">
+        호스트 : {{user.name}} 님
+      </div>
+      <div class="link">
+        <a href="www.google.com">go to open chat</a>
+      </div>
+    </div>
+    <div class="content_container">
+      <div class="text_description_title">
+        활동 소개 :
+      </div>
+      <div class="text_description">
+        {{activity_detail.introduction}}
+      </div>
+      <div class="specific_description">
+        총 {{activity.totalHour}} 시간
+      </div>
+      <div class="specific_description">
+        {{activity.vehicle}}
+      </div>
+      <div class="specific_description">
+        {{activitiy.language}}
+      </div>
+    </div>
+  </div>
+
+  <div class="content_container"> <!-- activity-->
+    <div class="simple_introduction">
+      <!--장소  ( + "30분" activitySchedule.endhour - activitySchedule.starthour )?????-->
+    </div>
+      {% for schedule in schedules %}
+      <div class="specific_schedule">
+        <div class="text_description_title">
+          {{schedule.title}}
+        </div>
+        <img src=""  /> <!--if image exist-->
+        <div class={% extends 'base.html' %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/activity_detail.css' %}">
+
+<div class="detail_container">
+  <div class="outline_container">
+    <div id="title">
+      <p>
+        {{activity_detail.title}}
+      </p>
+    </div>
+    <div class="text_description">
+        <p>
+          {{activity_detail.location}}
+        </p>
+    </div>
+    <div id="hash_tag_container">
+      {% for hash in hashtags %}
+        <div id="hash_tag">
+          {{hash}}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="content_container"> <!-- host and outline -->
+    <div class="host_container_sub">
+      <div id="host_name">
+        호스트 : {{user.name}} 님
+      </div>
+      <div class="link">
+        <a href="www.google.com">go to open chat</a>
+      </div>
+    </div>
+    <div class="content_container">
+      <div class="text_description_title">
+        활동 소개 :
+      </div>
+      <div class="text_description">
+        {{activity_detail.introduction}}
+      </div>
+      <div class="specific_description">
+        총 {{activity.totalHour}} 시간
+      </div>
+      <div class="specific_description">
+        {{activity.vehicle}}
+      </div>
+      <div class="specific_description">
+        {{activitiy.language}}
+      </div>
+    </div>
+  </div>
+
+  <div class="content_container"> <!-- activity-->
+    <div class="simple_introduction">
+      <!--장소  ( + "30분" activitySchedule.endhour - activitySchedule.starthour )?????-->
+    </div>
+      {% for schedule in schedules %}
+      <div class="specific_schedule">
+        <div class="text_description_title">
+          {{schedule.title}}
+        </div>
+        <img src=""  /> <!--if image exist-->
+        <div class="text_description">
+          {{schedule.introduction}}
+        </div>
+      </div>
+      {% endfor %}
+      <div class="maps">
+        <!-- map-->
+        Here is map! difficult...
+      </div>
+  </div>
+
+  <div class="link">
+    <!---->
+    There are links
+  </div>
+
+  <div class="review">
+    <!--review-->
+    There are Reviews
+  </div>
+</div>
+
+
+<div class="recommended_container">
+  There are recoommended activities
+</div>
+
+<div class="footer">
+  There are footer
+</div>
+"text_description">
+          {{schedule.introduction}}
+        </div>
+      </div>
+      {% endfor %}
+      <div class="maps">
+        <!-- map-->
+        Here is map! difficult...
+      </div>
+  </div>
+
+  <div class="link">
+    <!---->
+    There are links
+  </div>
+
+  <div class="review">
+    <!--review-->
+    There are Reviews
+  </div>
+</div>
+
+
+<div class="recommended_container">
+  There are recoommended activities
+</div>
+
+<div class="footer">
+  There are footer
+</div>

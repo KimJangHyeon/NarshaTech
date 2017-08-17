@@ -1,0 +1,68 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 10px
+}
+
+div {
+}
+
+.detail_container {
+ border-bottom: solid 0.5px black;
+}
+
+.outline_container {
+ border-bottom: solid 0.5px black;
+}
+
+#title {
+  display: inline-block;
+  font-size: 35px;
+  width: 100%;
+  font-weight:bold;
+  border-bottom: solid 0.5px black;
+}
+
+.text_description {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.text_description_title {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#hash_tag_container {
+
+}
+
+.content_container {
+  border-bottom: solid 0.5px black;
+}
+
+.recommended_container {
+  border-bottom: solid 0.5px black;
+}
+
+.host_container_sub {
+}
+
+#host_name {
+  font-size: 20px;
+}
+
+.link {
+  font-size: 12px;
+  text-align: right;
+}
+
+.specific_description {
+
+}
+
+#hash_tag {
+  font-style: italic;
+  font-style: oblique;
+}
