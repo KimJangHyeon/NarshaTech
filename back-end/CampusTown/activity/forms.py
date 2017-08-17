@@ -14,4 +14,4 @@ class Host4HashTagForm(forms.ModelForm) :
 class Host4ActivityPicture(forms.ModelForm) :
     class Meta :
         model = ActivityPicture
-        fields = ('url',)
+        fields = ('url', )

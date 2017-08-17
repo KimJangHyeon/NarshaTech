@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../stylesheet/hosting_sidebar.css">
+	<link rel="stylesheet" href="../stylesheet/host0_1_2_3_8.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+            $("#checkbox_auto3").click(function(){
+                if($("#checkbox_auto3").is(':checked')){$("#testD3").fadeIn();}
+                else{$("#testD3").fadeOut();}
+
+            });
+        });
+    </script>
+</head>
+
+<body>	
+<div id="side_bar">
+    <div id="side_bar_logo">
+		<a href="mainPage.html">
+			<img id="img_side_bar_logo" src="../image/logo.png" alt="로고"/>
+		</a>
+    </div>
+    <div id = "form_sort">
+        <div class="form_number">
+            <a href="host0.html">
+				<p>number1</p>
+			</a>
+        </div>
+        <div class="form_number">
+            <a href="host1.html">
+				<p>number1</p>
+			</a>
+        </div>
+        <div class="form_number">
+            <a href="host2.html">
+				<p>number1</p>
+			</a>
+        </div>
+        <div class="form_number_selected">
+            <p>number1</p>
+        </div>
+        <div class="form_number">
+            <p>number1</p>
+        </div>
+        <div class="form_number">
+            <p>number1</p>
+        </div>
+        <div class="form_number">
+            <p>number1</p>
+        </div>
+        <div class="form_number">
+            <p>number1</p>
+        </div>
+        <div class="form_number">
+            <p>number1</p>
+        </div>
+    </div>
+</div>
+<div id = "hosting_form_two">
+    <div class="host_f_two">
+		<h2>4. 인증하기</h2>
+		<form id="host3_form" method="get" action="host3.jsp">
+			<div>
+				<input class="select_border" type="text" name="email" id="host3_email">
+				<div id="host3_email_div">
+					<br>
+						<select class="select_border" id="host3_email_address" onchange="">
+							<option id="non "value="0">선택하세요</option>
+							<option value="@hanyang">@hanyang.ac.kr</option>
+							<option value="@ewha">@ewha...</option>
+							<option value="@konkuk">@konkuk...</option>
+							<option value="@yonsei">@yonsei...</option>
+						</select>
+					<br>
+				</div>
+			</div>
+			<input type="checkbox" name="autocheck" id="checkbox_auto3" value="on"> <label for="checkbox_auto">이 학교의 학생이 맞습니다.</label>
+			<div id="testD3" style="display:none">
+				<div id="test">
+					<button class="btn btn-blue" id="btn3" type="button">Submit</button>
+				</div>
+			</div>
+		</form>
+		<form id="host3_form2" method="get" action="host3_2.jsp">
+			<h2>인증번호 입력</h2>
+			<p class="host_two_text">메일로 보낸 인증번호 입력</p>
+			<input class="select_border" type="text" name="authen_num" id="host3_authen_num">
+			<button class="btn btn-blue" id="btn3_2" type="button">Submit</button>
+		</form>
+		<div id="profile">
+			<div id="host3_pic">
+				<img>
+			</div>
+			<div id="host3_text">
+				<h2>이름</h2>
+				<p class="host_two_text">소개</p>
+			</div>
+			<div id="host3_info">
+				<img>
+			</div>
+		</div>
+		
+    </div>
+	<div class="host_f_two">
+		<div id="host3_img">
+		</div>
+		<div id="host3_text2">
+			<h2>제목</h2>
+			<p class="host_two_text">본문</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

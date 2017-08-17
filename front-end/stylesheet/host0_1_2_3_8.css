@@ -2,13 +2,106 @@ div{
     border: dashed 1px blue;
 }
 
+form{
+	border: dashed 1px blue;
+
+}
+
+#host2_form {
+	display: inline-block;
+}
+
+#host2_btn{
+	float: left;
+	margin-top: 50px;
+}
+
+#host3_email{
+	margin: 0px;
+	display: inline-block;
+	width: 250px;
+}
+
+#host3_email_div{
+	display: inline-block;
+}
+
+#host3_email_address{
+	margin: 0px;
+	vertical-align: top;
+	width: 150px;
+	float: right;
+}
+
+#host3_form2{
+	margin-top: 50px;
+}
+
+#host3_authen_num{
+	margin-top: 0px;
+	width: 250px;
+	display: inline-block;
+}
+
+#btn3_2{
+	display: inline-block;
+	float: none;
+}
+
+#profile {
+	margin-top: 20px;
+}
+
+#host3_pic{
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	vertical-align: top;
+}
+
+#host3_text{
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+}
+
+#host3_info{
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	vertical-align: top;
+}
+
+#host3_img{
+	width: 100%;
+	height: 60%;
+	border: solid 1px black;
+}
+
+#host3_text2{
+
+}
+
 #host8_btn {
-	margin-top: 200px;
+	margin-top: 100px;
 }
 
 #host8_input {
-	margin-top: 50px;
-	min-height: 50px;
+	margin-top: 20px;
+	height: 200px;
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #24292e;
+    /*vertical-align: middle;*/
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    outline: none;
+    width: 94%;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
 }
 
 #host2_btn {
@@ -29,7 +122,7 @@ div{
     margin-top: 50px;
     display: inline-block;
     height: 550px;
-    width: 35%;
+    width: 350px;
 	vertical-align: top;
 }
 
@@ -38,14 +131,14 @@ div{
     margin-top: 50px;
     display: inline-block;
     height: 550px;
-    width: 25%;
+    width: 300px;
 	vertical-align: top;
 }
 
 .host2_graph{
     border: solid 1px black;
-    height: 250px;
-    width: 50px;
+    height: 300px;
+    width: 300px;
 }
 
 .host8_f_one_two{
@@ -80,7 +173,7 @@ div{
 #host0_check_btn, #host1_check_btn{
     width: 100%;
     height: 10%;
-    display: inline-block;	//¼Ò¿ë¾ø´Âµí
+    display: inline-block;	//ï¿½Ò¿ï¿½ï¿½ï¿½ï¿½Âµï¿½
 }
 
 #host0_img, #host1_img{
@@ -112,8 +205,9 @@ div{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    display: block;
+	display: block;
     width: 25%;
+	height: 40px;
     text-align: center;
     float: right;
 }
@@ -125,7 +219,7 @@ div{
     background-image: linear-gradient(-180deg, #404584 30%, #404584 30%);
 }
 
-select.select_border{
+.select_border{
     min-height: 14px;
     padding: 6px 8px;
     font-size: 12px;
@@ -141,21 +235,4 @@ select.select_border{
     width: 94%;
     box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
     margin-top: 50px;
-}
-
-input.input_border {
-    min-height: 14px;
-    padding: 6px 8px;
-    font-size: 12px;
-    line-height: 12px;
-    color: #24292e;
-    vertical-align: middle;
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: right 8px center;
-    border: 1px solid #d1d5da;
-    border-radius: 3px;
-    outline: none;
-    width: 94%;
-    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
 }

@@ -20,7 +20,7 @@ def signin(request):
             return redirect('/')
         else:
             messages.info(request, 'Login failed. Try again.')
-            return HttpResponse("")
+            return HttpResponse("Login fail.")
     else:
         form = LoginForm()
         return render(request, 'login/login.html', {'form': form})

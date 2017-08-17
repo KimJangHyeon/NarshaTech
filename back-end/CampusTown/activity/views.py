@@ -39,6 +39,7 @@ def host4(request) :
     page_title = 'host4'
     ctx = {
         'page_title':page_title
+        
     }
     tpl = loader.render_to_string('activity/host4.html', ctx)
     return HttpResponse(tpl)
