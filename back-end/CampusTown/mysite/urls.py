@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'', include('login.urls')),
     url(r'', include('main.urls')),
     url(r'', include('activity.urls')),
+    url(r'', include('activity_detail.urls')),
 ]
