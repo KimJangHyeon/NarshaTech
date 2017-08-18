@@ -8,18 +8,18 @@
   <div class="outline_container">
     <div id="title">
       <p>
-        {{activity_detail.title}}
+        {{detail.title}}
       </p>
     </div>
     <div class="text_description">
         <p>
-          {{activity_detail.location}}
+          {{detail.location}}
         </p>
     </div>
     <div id="hash_tag_container">
       {% for hash in hashtags %}
         <div id="hash_tag">
-          {{hash}}
+          {{hash_tag.hash}}
         </div>
       {% endfor %}
     </div>
@@ -28,7 +28,7 @@
   <div class="content_container"> <!-- host and outline -->
     <div class="host_container_sub">
       <div id="host_name">
-        호스트 : {{user.name}} 님
+        호스트 : {{user.first_name}} 님
       </div>
       <div class="link">
         <a href="www.google.com">go to open chat</a>
@@ -39,16 +39,16 @@
         활동 소개
       </div>
       <div class="text_description">
-        {{activity_detail.introduction}}
+        {{detail.introduction}}
       </div>
       <div class="specific_description">
-        총 {{activity.totalHour}} 시간
+        총 {{detail.totalHour}} 시간
       </div>
       <div class="specific_description">
-        {{activity.vehicle}}
+        {{detail.vehicle}}
       </div>
       <div class="specific_description">
-        {{activitiy.language}}
+        {{detail.language}}
       </div>
     </div>
   </div>
@@ -60,9 +60,9 @@
       {% for schedule in schedules %}
       <div class="specific_schedule">
         <div class="text_description_title">
-          {{schedule.title}}
+          {{schedule.location}}
         </div>
-        <img src=""  /> <!--if image exist-->
+        <img src={{schedule.url}}  /> <!--if image exist-->
         <div class="text_description">
           {{schedule.introduction}}
         </div>
@@ -80,8 +80,15 @@
   </div>
 
   <div class="review">
-    <!--review-->
-    There are Reviews
+    {% for review in schedule %}
+      <div id="user_name">
+        {{review.first_name}}
+      </div>
+      <img src= /> <!--foreignkey로 등록해야함-->
+      <div id="user_review">
+        {{review.review}}
+      </div>
+    {% endfor %}
   </div>
 </div>
 </div>
@@ -90,10 +97,10 @@
     <img src=""  />
   </div>
   <div id="price">
-    {{ActivityDetail.price}}
+    {{detail.price}}
   </div>
   <div id="ranking">
-    {{Host.ranking}}
+    {{detail.ranking}}
   </div>
   <div class="sharing">
     <!-- facebook, instagram, etc.-->
