@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'css/activity_detail.css' %}">
+<link rel="stylesheet" type="text/css" href="../../static/css/activity_detail.css">
+
 
 <div id="total_display">
 <div id="left_display">
@@ -18,7 +20,7 @@
     </div>
     <div id="hash_tag_container">
       {% for hash in hashtags %}
-        <div id="hash_tag">
+        <div  id="hash_tag">
           {{hash_tag.hash}}
         </div>
       {% endfor %}
@@ -33,23 +35,26 @@
       <div class="link">
         <a href="www.google.com">go to open chat</a>
       </div>
-    </div>
-    <div class="content_container">
-      <div class="text_description_title">
-        활동 소개
-      </div>
       <div class="text_description">
-        {{detail.introduction}}
+        {{host.introduction}}
       </div>
-      <div class="specific_description">
-        총 {{detail.totalHour}} 시간
-      </div>
-      <div class="specific_description">
-        {{detail.vehicle}}
-      </div>
-      <div class="specific_description">
-        {{detail.language}}
-      </div>
+    </div>
+  </div>
+  <div class="content_container">
+    <div class="text_description_title">
+      활동 소개
+    </div>
+    <div class="text_description">
+      {{detail.introduction}}
+    </div>
+    <div class="specific_description">
+      총 {{detail.totalHour}} 시간
+    </div>
+    <div class="specific_description">
+      {{detail.vehicle}}
+    </div>
+    <div class="specific_description">
+      {{detail.language}}
     </div>
   </div>
 
@@ -70,7 +75,11 @@
       {% endfor %}
       <div class="maps">
         <!-- map-->
-        Here is map! difficult...
+        <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+        <script type="text/javascript" src="../scripts/map.js"></script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0YyDiima_RM8NSbgLm3HwdIXfQUV9Zyo&libraries=visualization&callback=initMap">
+        </script>
       </div>
   </div>
 
@@ -82,9 +91,11 @@
   <div class="review">
     {% for review in schedule %}
       <div id="user_name">
-        {{review.first_name}}
+        {{review.user.first_name}} 님
       </div>
-      <img src= /> <!--foreignkey로 등록해야함-->
+      <div id="review_photo">
+      <img src={{review.user.image}} /> <!--foreignkey로 등록해야함-->
+      </div>
       <div id="user_review">
         {{review.review}}
       </div>
@@ -94,7 +105,18 @@
 </div>
 <div id="right_display">
   <div id="photo">
-    <img src=""  />
+    <script type="text/javascript" src="../scripts/slideshow.js"></script>
+
+    <div class="slider" id="main-slider"><!-- outermost container element -->
+    	<div class="slider-wrapper"><!-- innermost wrapper element -->
+        {% if photo %}
+    		  {% for ph in photo %}
+            <img src={{ph.url}}  />
+          {% endfor %}
+        {% endif %}
+    	</div>
+    </div>
+    <div>
   </div>
   <div id="price">
     {{detail.price}}
