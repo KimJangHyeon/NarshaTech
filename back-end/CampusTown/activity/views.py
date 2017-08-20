@@ -14,15 +14,17 @@ def host2(request):
 	
 		form=ActivityForm(request.POST)
 		if form.is_valid():
-			category=request.POST.get('category','')
-			language=request.POST.get('language','')
+
+			category=form.cleaned_data["category"]
+			language=form.cleaned_data["language"]
 			new_activity=ActivityInfo(category=category, language=language)
 			new_activity.save()
+
 			return HttpResponseRedirect(reverse('host2'))
 	else:
 		form=ActivityForm()
 
-	return render(request,'activity/host2.html',{'form':form})
+	return render(request,'activity/host2.html',{'form':form},)
 	
 def host4(request):
 	return render(request,'activity/host4.html',{'form':form}) 

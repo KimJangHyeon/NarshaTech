@@ -3,14 +3,14 @@
     left:13%;
     height:100%;
     width:33%;
-    background: #ffffff;
+    /*background: #ffffff;*/
 }
 #host_col1{
     position:fixed;
     left:46%;
     height:100%;
     width:30%;
-    background: #ffffff;
+    /*background: #ffffff;*/
 }
 
 #host_col2{
@@ -29,3 +29,4 @@
     height:100%;
 
 }
+

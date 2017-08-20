@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../stylesheet/hosting_sidebar.css">
-    <link rel="stylesheet" href="../stylesheet/hosting_form_three.css">
-    <link rel="stylesheet" href="../stylesheet/textstyle.css">
-    <link rel="stylesheet" href="../stylesheet/host4_5.css">
+    <link rel="stylesheet" href="{% static 'css/hosting_sidebar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/hosting_form_three.css' %}">
+    <link rel="stylesheet" href="{% static 'css/textstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/host4_5.css' %}">
     <style>
        #map {
         height: 100%;
@@ -18,7 +18,7 @@
 <body>
 <div id="side_bar">
     <div id="side_bar_logo">
-        <img id="img_side_bar_logo" src="../image/logo.png" alt="로고"/>
+        <img id="img_side_bar_logo" src="{% static 'image/logo.png' %}" alt="로고"/>
     </div>
     <div id = "form_sort">
         <div class="form_number">
@@ -85,7 +85,7 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
-<script type="text/javascript" src="../scripts/map.js"></script>
+<script type="text/javascript" src="{% static 'scripts/map.js' %}"></script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7KBy5GlwzwE0E-oIplx_GZeGE0Rxm_L0&callback=myMap"></script>
 <!--<script async defer-->

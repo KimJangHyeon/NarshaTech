@@ -33,7 +33,7 @@ CATEGORIES=(
 class ActivityInfo(models.Model) :
     user_id = models.ForeignKey(User,null=True, blank=True)
     title = models.CharField(max_length = 100,null=True, blank=True) 
-    category = models.CharField(max_length = 20,choices=CATEGORIES,default='art/design')
+    category = models.CharField(max_length = 30,choices=CATEGORIES,default='art/design')
     language=models.CharField(max_length=30, choices=LANGUAGE,default='Korean') 
     activityLocation = models.CharField(max_length = 50,null=True, blank=True) 
     activityIntroduction = models.CharField(max_length = 500,null=True, blank=True) 
