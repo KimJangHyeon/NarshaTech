@@ -1,11 +1,12 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.models import User
-from hosting.models import ActivityInfo, ActivitySchedule, ActivityPicture, HashTag, ActivityReview, Host #, ActivityLanguage
+from activity.models import Activity, ActivitySchedule, ActivityPicture, HashTag, ActivityReview #, ActivityLanguage
+from hosting.models import Host
 from .forms import ActivityDetail, ActivityDetailPicture, ActivityDetailHashTag, ActivityDetailReview, HostForm, UserForm, ActivityDetailSchedule
 
 # Create your views here.
 def detail(request, pk) :
-    activity = get_object_or_404(ActivityInfo, pk=pk)
+    activity = get_object_or_404(Activity, pk=pk)
     picture = ActivityPicture.objects.filter(activityIndex=pk)
     schedule = ActivitySchedule.objects.filter(activityIndex=pk)
     hash_tag = HashTag.objects.filter(activityIndex=pk)

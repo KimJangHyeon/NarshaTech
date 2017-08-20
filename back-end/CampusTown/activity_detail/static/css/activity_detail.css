@@ -57,8 +57,36 @@ div {
   font-weight: bold;
 }
 
-#review_photo {
+#user_name {
+  height: 40px;
+  float: left;
+  margin-top: 5px;
+}
 
+.review {
+}
+
+#location_photo {
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin-left: 5px;
+  border: solid 0.5px green;
+  display: inline-block;
+}
+
+#review_photo {
+  width: 40px;
+  height: 40px;
+  float: right;
+  border: solid 0.5px black;
+  display: block;
+}
+
+#user_review {
+  float: left;
+  clear: left;
+  height: auto;
 }
 
 #hash_tag_container {
@@ -87,7 +115,10 @@ div {
 }
 
 #photo {
-
+  width: 95%;
+  height: 450px;
+  border: solid 0.5px black;
+  display: block;
 }
 
 #ranking {

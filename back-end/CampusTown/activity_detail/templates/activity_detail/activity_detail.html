@@ -48,7 +48,7 @@
       {{detail.introduction}}
     </div>
     <div class="specific_description">
-      총 {{detail.totalHour}} 시간
+      총 {{detail.totalTime}} 시간
     </div>
     <div class="specific_description">
       {{detail.vehicle}}
@@ -89,15 +89,15 @@
   </div>
 
   <div class="review">
-    {% for review in schedule %}
+    {% for rv in review %}
       <div id="user_name">
-        {{review.user.first_name}} 님
+        {{rv.user.first_name}} 님
       </div>
       <div id="review_photo">
-      <img src={{review.user.image}} /> <!--foreignkey로 등록해야함-->
+      <img src={{rv.user.image}} /> <!--foreignkey로 등록해야함-->
       </div>
       <div id="user_review">
-        {{review.review}}
+        {{rv.review}}
       </div>
     {% endfor %}
   </div>
@@ -108,10 +108,10 @@
     <script type="text/javascript" src="../scripts/slideshow.js"></script>
 
     <div class="slider" id="main-slider"><!-- outermost container element -->
-    	<div class="slider-wrapper"><!-- innermost wrapper element -->
+      <div class="slider-wrapper"><!-- innermost wrapper element -->
         {% if photo %}
     		  {% for ph in photo %}
-            <img src={{ph.url}}  />
+            <div id="location_photo"><img src={{ph.url}}  /></div>
           {% endfor %}
         {% endif %}
     	</div>

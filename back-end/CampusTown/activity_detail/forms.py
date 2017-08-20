@@ -1,10 +1,11 @@
 from django import forms
-from .models import ActivityInfo, ActivitySchedule, ActivityPicture, HashTag, ActivityReview, Host #, ActivityLanguage
+from activity.models import Activity, ActivitySchedule, ActivityPicture, HashTag, ActivityReview #, ActivityLanguage
+from hosting.models import Host
 from django.contrib.auth.models import User
 
 class ActivityDetail(forms.ModelForm) :
     class Meta :
-        model = ActivityInfo
+        model = Activity
         fields = ["title", "category", "gatheringityLocation", "activityIntroduction", "vehicle", "meetingPlace", "price", "maximumCapacity", "additionalInformation", "readyTime", "lastReadyTime", "activityRating", "totalTime"]
 
 class ActivityDetailPicture(forms.ModelForm) :
@@ -19,8 +20,8 @@ class ActivityDetailSchedule(forms.ModelForm) :
 
 class ActivityDetailHashTag(forms.ModelForm) :
     class Meta :
-        model = HashTag
-        fields = ["url"]
+        moaZdel = HashTag
+        fields = ["hash"]
 
 class ActivityDetailReview(forms.ModelForm) :
     class Meta :
@@ -35,4 +36,4 @@ class HostForm(forms.ModelForm) :
 class UserForm(forms.ModelForm) :
     class Meta :
         model = User
-        fields = ["last_name", "first_name", "gender"]
+        fields = ["last_name", "first_name"]

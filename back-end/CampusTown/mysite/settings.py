@@ -49,7 +49,7 @@ INSTALLED_APPS = [
 	'login',
 	'main',
 	'activity',
-	#'hosting',
+	'hosting',
 ]
 
 MIDDLEWARE = [
