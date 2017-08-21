@@ -50,6 +50,6 @@ def host4(request):
 
 #class host7(FormView):
 
-#class host8(FormView):
+def host8(FormView):
 
-
+def hostN(FormView):

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../stylesheet/hosting_sidebar.css">
-	<link rel="stylesheet" href="../stylesheet/host0_1_2_8.css">
+	<link rel="stylesheet" href="../stylesheet/host0_1_2_3_8.css">
 </head>
 <body>
 <div id="side_bar">
@@ -51,18 +51,40 @@
 </div>
 
 <div id = "hosting_form_two">
-  <!-- agree -->
     <div class="host8_f_one_two">
-		<h2>제목</h2>
-		<p class="host_two_text">본문</p>
+		<h2>검토</h2>
+		<p class="host_two_text">제목</p>
+		{{check.title}}
+		<p class="host_two_text">카테고리</p>
+		{{check.category}}
+		<p class="host_two_text">언어</p>
+		{{check.language}}
+		<p class="host_two_text">여행장소</p>
+		{{check.activityLocation}}
+		<p class="host_two_text">여행 소개</p>
+		{{check.activityIntroduction}}
+		<p class="host_two_text">교통수단</p>
+		{{check.vehicle}}
+		<p class="host_two_text">집합장소</p>
+		{{check.meetingPlace}}
+		<p class="host_two_text">가격</p>
+		{{check.price}}
+		<p class="host_two_text">최대인원</p>
+		{{check.maximumCapacity}}
+		<p class="host_two_text">기타 주의사항</p>
+		{{check.additionalInformation}}
+		<p class="host_two_text">준비시간</p>
+		{{check.readyTime}}
+		<p class="host_two_text">막바지 준비시간</p>
+		{{check.lastReadyTime}}
+
     </div>
-    <!-- 제약사항 -->
 	<div class="host8_f_one_two">
-		<h2>제목</h2>
-		<p class="host_two_text">본문</p>
+		<h2>제약사항</h2>
+		<p class="host_two_text">기타 주의사항</p>
 		<form id="host8_form" method="get" action="host8.jsp">		<!-- 서버에서 다음 페이지로 연결 --->
 			<br>
-			<input class="input_border" id="host8_input" type="text" name="restr" id="restr"><br>
+			<textarea required class="input_border" id="host8_input" name="contents"></textarea>
 			<input class="btn btn-blue" id="host8_btn" type="button" value="Button">
 		</form>
 	</div>

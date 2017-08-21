@@ -1,6 +1,6 @@
 from django.conf.urls import include, url
 from django.contrib import admin
-from activity.views import host2,host1,host5,host4
+from activity.views import host2,host1,host5,host4,host8,hostN
 from . import views
 
 urlpatterns = [
@@ -13,5 +13,6 @@ urlpatterns = [
    url(r'^activity/5$', views.host5, name='host5'),
    # url(r'^activity/6$', views.host6, name='hosting'),
    # url(r'^activity/7$', views.host7, name='hosting'),
-   # url(r'^activity/8$', views.host8, name='hosting'),
+   url(r'^activity/8$', views.host8, name='host8'),
+   url(r'^activity/9$',views.hostN,name='hostN'),
 ]
