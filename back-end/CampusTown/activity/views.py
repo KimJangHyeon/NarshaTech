@@ -7,7 +7,7 @@ from django.views.generic import TemplateView
 from .models import ActivityInfo
 from .forms import ActivityForm
 from django.shortcuts import render, redirect
-
+from django.shortcuts import render, get_object_or_404
 
 def host2(request):
 	if request.method=='POST':
@@ -24,7 +24,7 @@ def host2(request):
 	else:
 		form=ActivityForm()
 
-	return render(request,'activity/host2.html',{'form':form},)
+	return render(request,'activity/host2.html',{'form':form})
 	
 def host4(request):
 	return render(request,'activity/host4.html',{'form':form}) 
@@ -32,11 +32,17 @@ def host4(request):
 def host1(request):
 	return render(request,'activity/host1.html',{})	
 
-def host5(request):
-	return render(request,'activity/host5.html',{})
+def host8(request,pk):
+	activity=get_object_or_404(ActivityInfo,pk=pk)
+	context={"check":activity}
+	return render(request,'activity/host8.html',context)
 
-def host4(request):
-	return render(request,'activity/host4.html',{})
+def host5(request):
+	return render(request,'activity/host5.html')
+
+def host9(request):
+	return render(request,'activity/host9.html')
+
 #class host0(FormView):
 	
 
@@ -50,6 +56,6 @@ def host4(request):
 
 #class host7(FormView):
 
-def host8(FormView):
+#def host8(FormView):
 
-def hostN(FormView):
+#def hostN(FormView):
