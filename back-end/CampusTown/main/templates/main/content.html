@@ -14,13 +14,13 @@
 <div class="containerSlide">
   {% for content in contents %}
       <div class="container_j">
-          <a href="https://trello.com/b/reuaCfXg/campustown" target="_blank" rel="noopener noreferer" class="link_j">
+          <a href="/activity/detail/{{ content.pk }}/"} target="_blank" rel="noopener noreferer" class="link_j">
               <img src={{content.image}}>
               <div class = "product_explain">
                   <div class="twoLineTitle">
                       <span><p>{{content.title}}</p></span>
                       <div class="inline_g">
-                          <span class="text_5"><p>{{content.text}}</p></span>
+                          <span class="text_5"><p>{{content.activityIntroduction}}</p></span>
                       </div>
                   </div>
               </div>

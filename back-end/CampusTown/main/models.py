@@ -1,4 +1,6 @@
 from django.db import models
+from activity.models import Activity, ActivitySchedule, ActivityPicture, HashTag, ActivityReview #, ActivityLanguage
+
 
 # Create your models here.
 class Main(models.Model) :
