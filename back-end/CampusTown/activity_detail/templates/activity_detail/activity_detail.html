@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'css/activity_detail.css' %}">
 <link rel="stylesheet" type="text/css" href="../../static/css/activity_detail.css">
@@ -15,13 +17,13 @@
     </div>
     <div class="text_description">
         <p>
-          {{detail.location}}
+          {{detail.gatheringLocation}}
         </p>
     </div>
     <div id="hash_tag_container">
-      {% for hash in hashtags %}
+      {% for hash_tag in hashtags %}
         <div  id="hash_tag">
-          {{hash_tag.hash}}
+           #{{hash_tag.hash}}
         </div>
       {% endfor %}
     </div>
@@ -30,7 +32,7 @@
   <div class="content_container"> <!-- host and outline -->
     <div class="host_container_sub">
       <div id="host_name">
-        호스트 : {{user.first_name}} 님
+        호스트 : {{host.user_id.first_name}} 님
       </div>
       <div class="link">
         <a href="www.google.com">go to open chat</a>
@@ -87,11 +89,12 @@
     <!---->
     There are links
   </div>
-
   <div class="review">
-    {% for rv in review %}
+    {% if reviews %}
+    {% for rv in reviews %}
+    review!!
       <div id="user_name">
-        {{rv.user.first_name}} 님
+        {{rv.user_id.first_name}} 님
       </div>
       <div id="review_photo">
       <img src={{rv.user.image}} /> <!--foreignkey로 등록해야함-->
@@ -100,6 +103,9 @@
         {{rv.review}}
       </div>
     {% endfor %}
+    {% else %}
+    There is no <!-- REVIEW: -->
+    {% endif %}
   </div>
 </div>
 </div>
@@ -140,3 +146,4 @@
 <div class="footer">
   There are footer
 </div>
+{% endblock %}

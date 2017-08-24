@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Host(models.Model) :
-    id = models.ForeignKey(User, primary_key = True)
+    user_id = models.ForeignKey(User, primary_key = True)
     picture = models.URLField()
     university = models.CharField(max_length = 50)
     location = models.CharField(max_length = 175)

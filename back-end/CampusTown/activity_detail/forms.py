@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 class ActivityDetail(forms.ModelForm) :
     class Meta :
         model = Activity
-        fields = ["title", "category", "gatheringityLocation", "activityIntroduction", "vehicle", "meetingPlace", "price", "maximumCapacity", "additionalInformation", "readyTime", "lastReadyTime", "activityRating", "totalTime"]
+        fields = ["title", "category", "gatheringLocation", "activityIntroduction", "vehicle", "meetingPlace", "price", "maximumCapacity", "additionalInformation", "readyTime", "lastReadyTime", "activityRating", "totalTime"]
 
 class ActivityDetailPicture(forms.ModelForm) :
     class Meta :
