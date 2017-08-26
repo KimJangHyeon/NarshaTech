@@ -13,7 +13,7 @@ urlpatterns = [
    url(r'^activity/5$', views.host5, name='host5'),
    # url(r'^activity/6$', views.host6, name='hosting'),
    # url(r'^activity/7$', views.host7, name='hosting'),
-   url(r'^activity/8/(?P<pk>\d+)/$', views.host8, name='host8'),
+   url(r'^activity/8/(?P<pk>\d+)$', views.host8, name='host8'),
    url(r'^activity/9$',views.host9,name='host9'),
    #url(r'^activity/10$',views.hostN,name='hostN'),
 ]
