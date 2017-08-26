@@ -14,8 +14,6 @@ def host2(request):
 		form=ActivityForm(request.POST)
 		if form.is_valid():
 			new_activity=form.save(commit=False)
-			new_activity.category=request.category
-			new_activity.language=request.language
 			new_activity.save()
 			return redirect('host4')
 	else:

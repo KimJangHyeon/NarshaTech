@@ -7,10 +7,10 @@ from django.contrib.auth.models import User
 # Create your models here.
 	
 LANGUAGE=(
-	('Kor','Korean'),
-	('Eng','English'),
-	('Jap','Japanese'),
-	('Chin','Chinese'),
+	('Korean','Korean'),
+	('English','English'),
+	('Japanese','Japanese'),
+	('Chinese','Chinese'),
 )
 
 CATEGORIES=(
