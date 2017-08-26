@@ -53,6 +53,7 @@ def host9(request):
 
 #class host7(FormView):
 
-#def host8(FormView):
 
-#def hostN(FormView):
+def hostN(request):
+	return render(request,'activity/hostN.html')
+
