@@ -51,13 +51,13 @@
 
 <div id = "hosting_form_two">
     <div class="host2_f_one">
-		<form action="{% url 'host2' %}" method="post"> {% csrf_token %}		<!-- 서버에서 host3으로 연결 --->
+		<form action="{% url 'host2' %}" method="POST" class="post-form"> {% csrf_token %}		<!-- 서버에서 host3으로 연결 --->
       <!-- language -->
-			
-			<div>
+			{{form.as_p}}
+			<!--<div>-->
 				
-				<h2>언어</h2>
-				{{form.language}}
+			<!--	<h2>언어</h2>
+				{{form.language}}-->
 				<!--<br>
 					<select name="language">
 						<option value="Korean">Korean</option>
@@ -68,12 +68,12 @@
 			
 					</select> 
 				<br> -->
-			</div>
-      <!-- category -->
-			<div>
+			<!--</div> -->
+      <!-- category 
+			<div>  -->
 
-				<h2>카테고리</h2>
-				{{form.category}}
+				<!--///<h2>카테고리</h2> 
+				{{form.category}} -->
 				<!--<br>
 					<select name="category">
 						<option value="art/design">art/design</option>
@@ -89,13 +89,13 @@
 						<option value="business">business</option>
 						<option value="bar/club">bar/club</option>
 					</select>
-				<br>-->
+				<br>
 			</div>
-			<div>
-				<a href="{% url 'host4' %}">
-				<input class="btn btn-blue" id="host2_btn" type="button" value="Button"> 
-				</a>
-			</div>
+			<div>-->
+				<a href={% url 'host4' %}>
+				<input class="btn btn-blue" id="host2_btn" type="button" value="Next">
+			</a> 
+			<!--</div> -->
 		</form>
     </div>
 	<div class="host2_f_two_three">

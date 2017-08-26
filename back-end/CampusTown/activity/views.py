@@ -10,37 +10,36 @@ from django.shortcuts import render, redirect
 from django.shortcuts import render, get_object_or_404
 
 def host2(request):
-	if request.method=='POST':
-	
+	if request.method=="POST":
 		form=ActivityForm(request.POST)
 		if form.is_valid():
-
-			category=form.cleaned_data["category"]
-			language=form.cleaned_data["language"]
-			new_activity=ActivityInfo(category=category, language=language)
+			new_activity=form.save(commit=False)
+			new_activity.category=request.category
+			new_activity.language=request.language
 			new_activity.save()
-
-			return HttpResponseRedirect(reverse('host2'))
+			return redirect('host4')
 	else:
 		form=ActivityForm()
-
 	return render(request,'activity/host2.html',{'form':form})
 	
 def host4(request):
-	return render(request,'activity/host4.html',{'form':form}) 
+	return render(request,'activity/host4.html',) 
 
 def host1(request):
 	return render(request,'activity/host1.html',{})	
 
 def host8(request,pk):
 	activity=get_object_or_404(ActivityInfo,pk=pk)
-	context={"check":activity}
+	context={"new_activity":activity}
 	return render(request,'activity/host8.html',context)
 
 def host5(request):
 	return render(request,'activity/host5.html')
 
 def host9(request):
+	#if request.method=="POST":
+	#	form=ActivityForm(request.POST)
+	#	if form.is_valid():
 	return render(request,'activity/host9.html')
 
 #class host0(FormView):
