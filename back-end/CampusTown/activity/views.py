@@ -1,68 +1,60 @@
 from django.shortcuts import render, redirect
 from django.template import loader, Context
 from django.http import HttpResponse
+from .models import ActivityInfo
+from .forms import ActivityForm, Host4AcivityForm, Host4ActivityPicture, Host4AcivityForm
 
 # Create your views here.
+def host(request) :
+    return render(request, 'activity/startHosting.html', {})
+
 def host0(request) :
-    page_title = 'host4'
-    tpl = loader.get_template('host4.html')
-    ctx = context({
-        'page_title':page_title
-    })
-    return HttpResponse(tpl.render(ctx))
+    return render(request, 'activity/host0.html', {})
 
-def host1(request) :
-    page_title = 'host4'
-    tpl = loader.get_template('host4.html')
-    ctx = context({
-        'page_title':page_title
-    })
-    return HttpResponse(tpl.render(ctx))
+def host1(request):
+    return render(request,'activity/host1.html',{}) 
 
-def host2(request) :
-    page_title = 'host4'
-    tpl = loader.get_template('host4.html')
-    ctx = context({
-        'page_title':page_title
-    })
-    return HttpResponse(tpl.render(ctx))
-
-def host3(request) :
-    page_title = 'host4'
-    tpl = loader.get_template('host4.html')
-    ctx = context({
-        'page_title':page_title
-    })
-    return HttpResponse(tpl.render(ctx))
-
-def host4(request) :
-    page_title = 'host4'
-    ctx = {
-        'page_title':page_title
-        
-    }
-    tpl = loader.render_to_string('activity/host4.html', ctx)
-    return HttpResponse(tpl)
-
-def add_host4(request) :
-    key = request.data.dict()
-    if 'htitle' in key == False :
-        return HttpResponse('input title')
-
-    #if request.POST.has_key('htitle') == False :
-    #    return HttpResponse('input title')
+def host2(request):
+    if request.method=="POST":
+        form=ActivityForm(request.POST)
+        if form.is_valid():
+            new_activity=form.save(commit=False)
+            new_activity.save()
+            return redirect('host4')
     else:
-        #아직 글자수 처리 안함.
-        title = request.POST('title')
-    #if request.POST.has_key('htag') == False :
-    if 'htag' in key == False :
-        return HttpResponse('input tag')
-    else:
-        tag = request.POST['htag']
-    #if request.POST.has_key('imgload') == True :
-    #    picture = imgload
-    ##totalTime // htrip_start & htrip_end
-    return HttpDirect("/activity/5/")
+        form=ActivityForm()
+    return render(request,'activity/host2.html',{'form':form})
+    
+def host3(request) : #guide auth
+    page_title = 'host4'
+    tpl = loader.get_template('host4.html')
+    ctx = context({
+        'page_title':page_title
+    })
+    return HttpResponse(tpl.render(ctx))
+
+def host4(request, pk) :
+    activity = get_object_or_404(ActivityInfo, pk=pk)
+    if request.method=="POST" :
+        #needed forms : Host4AcivityForm Host4HashTagForm Host4ActivityPicture
+        form = Host4AcivityForm(request.POST, instance=activity)
+        hash_tag = Host4HashTagForm(request.POST)
+        pictures = Host4ActivityPicture(request.POST)
+        if form.is_valid() :
+            #form save
+            activity = form.save(commit = False)
+            new_hash = hash_tag.save(commit = False)
+            new_picture = pictures.save(commit = False)
+            activity.save()
+            new_hash.save()
+            new_picture.save()
+            return redirect('host5', pk=activity.pk)
+    else :
+        #needed forms
+        form = Host4AcivityForm(instance = activity)
+        hash_tag = Host4HashTagForm()
+        pictures = Host4ActivityPicture()
+    return render(request, 'activity/host4.html', {'activity' : activity, 'hash_tag' : hash_tag, 'pictures' : pictures})
 
 def host5(request) :
     page_title = 'host4'
@@ -88,10 +80,7 @@ def host7(request) :
     })
     return HttpResponse(tpl.render(ctx))
 
-def host8(request) :
-    page_title = 'host4'
-    tpl = loader.get_template('host4.html')
-    ctx = context({
-        'page_title':page_title
-    })
-    return HttpResponse(tpl.render(ctx))
+def host8(request,pk):
+    activity=get_object_or_404(ActivityInfo,pk=pk)
+    context={"new_activity":activity}
+    return render(request,'activity/host8.html',context)

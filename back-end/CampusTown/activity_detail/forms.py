@@ -1,11 +1,11 @@
 from django import forms
-from activity.models import Activity, ActivitySchedule, ActivityPicture, HashTag, ActivityReview #, ActivityLanguage
+from activity.models import ActivityInfo, ActivitySchedule, ActivityPicture, HashTag, ActivityReview #, ActivityLanguage
 from hosting.models import Host
 from django.contrib.auth.models import User
 
 class ActivityDetail(forms.ModelForm) :
     class Meta :
-        model = Activity
+        model = ActivityInfo
         fields = ["title", "category", "gatheringLocation", "activityIntroduction", "vehicle", "meetingPlace", "price", "maximumCapacity", "additionalInformation", "readyTime", "lastReadyTime", "activityRating", "totalTime"]
 
 class ActivityDetailPicture(forms.ModelForm) :
