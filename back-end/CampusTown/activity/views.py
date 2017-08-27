@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.template import loader, Context
 from django.http import HttpResponse
 from .models import ActivityInfo
@@ -55,7 +55,7 @@ def host4(request, pk) :
         hash_tag = Host4HashTagForm()
         pictures = Host4ActivityPicture()
     return render(request, 'activity/host4.html', {'activity' : activity, 'hash_tag' : hash_tag, 'pictures' : pictures})
-
+"""
 def host4(request) :
     if request.method=="POST" :
         #needed forms : Host4AcivityForm Host4HashTagForm Host4ActivityPicture
@@ -76,14 +76,14 @@ def host4(request) :
         form = Host4AcivityForm()
         hash_tag = Host4HashTagForm()
         pictures = Host4ActivityPicture()
-    return render(request, 'activity/host4.html', {'activity' : activity, 'hash_tag' : hash_tag, 'pictures' : pictures})
-
-def host5(request) :
+    return render(request, 'activity/host4.html', {'activity' : form, 'hash_tag' : hash_tag, 'pictures' : pictures})
+"""
+def host5(request, pk) :
     page_title = 'host4'
-    tpl = loader.get_template('host4.html')
-    ctx = context({
+    tpl = loader.get_template('activity/host4.html')
+    ctx = {
         'page_title':page_title
-    })
+    }
     return HttpResponse(tpl.render(ctx))
 
 def host6(request) :

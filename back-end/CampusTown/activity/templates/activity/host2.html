@@ -51,28 +51,27 @@
 
 <div id = "hosting_form_two">
     <div class="host2_f_one">
-		<form action="{% url 'host2' %}" method="POST" class="post-form"> {% csrf_token %}		<!-- 서버에서 host3으로 연결 --->
+		<form action="" method="POST" class="post-form"> {% csrf_token %}		<!-- 서버에서 host3으로 연결 --->
       <!-- language -->
-			
+
 			<h2>언어</h2>
 			{{form.language}}
-				
+
 			<!--</div> -->
-      <!-- category 
+      <!-- category
 			<div> -->
 
-				<h2>카테고리</h2> 
+				<h2>카테고리</h2>
 				{{form.category}}
-			
+
 			<br>
 			</br>
-			
-				<a href="{% url 'host4' %}">
+
 				<button type="next" class="save btn btn-default">Save</button>
-			</a> 
-			
-			
-			
+			</a>
+
+
+
 		</form>
     </div>
 	<div class="host2_f_two_three">

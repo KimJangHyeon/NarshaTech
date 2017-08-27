@@ -1,8 +1,8 @@
-{% extends 'hosting/side_bar.html' %}
+{% extends 'activity/hosting_sidebar.html' %}
 
 {% block content %}
 <div id="contain">
-    <form id="host4_form" method="post" action="url_for{{name()}}" enctype="multipart/form-data">
+    <form id="host4_form" method="post" action="{% url 'host5' pk=activity.pk%}" enctype="multipart/form-data"> {% csrf_token %}
         <div id="host_col0">
             <div id="col0_contain">
                 <input type="hidden" name="hiddenvalue" value='host4'>
