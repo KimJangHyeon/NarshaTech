@@ -1,0 +1,271 @@
+<!--hosting_title_background 배경 이미지 bnb꺼임-->
+#hosting_body{
+
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 51px);
+    top:51px;
+
+}
+
+#hosting_contain{
+    width:100%;
+    height: 670px;
+    position: relative;
+
+}
+
+#hosting_contain_ex1{
+    width:100%;
+    height:670px;
+    position: relative;
+    background: radial-gradient(farthest-corner at 0% 0%, #e6b4b4 20%, #ffb400 60%, #B5F0E9) !important;
+}
+#hosting_contain_ex2{
+    text-align:center;
+    width:100%;
+    height:100px;
+    position:relative;
+
+    padding: 50px 0 50px 0;
+
+}
+#hosting_title_background{
+    position:absolute;
+    height:450px;
+    width:400px;
+    background-image:url(https://a0.muscache.com/airbnb/static/launch_platform/experience-hosting/hero_paola_sm_phone-ea05df067e18ed2ca0815c6ddea3a12a.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    bottom:0px;
+    left: 70%;
+
+
+}
+
+#container_title{
+    position:absolute;
+    left: 7%;
+    top: 10%;
+}
+
+
+#hosting_title{
+    margin:10px 0 10px 0;
+}
+
+#hosting_explain{
+    margin:10px 0 10px 0;
+}
+
+#hosting_contain p{
+    line-height:10px;
+}
+
+#hosting_making_hosting a{
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    display: inline-block !important;
+    color: #484848 !important;
+    border-radius: 64px !important;
+    border: 2px solid !important;
+    border-color: #484848 !important;
+    padding: 8px 24px 9px !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+#hosting_contain_adv{
+    position:relative;
+    background-image:url("https://cdn.pixabay.com/photo/2017/06/24/23/03/railway-2439189_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 20px 0 0 0;
+    width:100%;
+    height:550px;
+    text-align:center;
+    vertical-align: middle;
+}
+
+#block_of_adv{
+    height:100%;
+    max-width:100%;
+    margin:0 10% 0 10%;
+    text-align: center;
+
+}
+
+#method_contain{
+    position:relative;
+    width:100%;
+    height:550px;
+    text-align:center;
+    vertical-align: middle;
+}
+
+#block_of_method{
+    height:100%;
+    max-width:100%;
+    margin:0 10% 0 10%;
+    padding:20px 0 0 0;
+    text-align: center;
+}
+
+#hosting_country{
+    width:100%;
+    height: 700px;
+    position: relative;
+    background: radial-gradient(farthest-corner at 0% 0%, #e6b4b4 20%, #ffb400 60%, #B5F0E9) !important;
+    text-align:center;
+}
+
+#submit_form{
+    width:500px;
+    height:300px;
+    padding:30px 20px;
+    position:absolute;
+    background: white;
+    text-align:left;
+    left: calc((100% - 500px)/2);
+    top:calc((100% - 300px)/2);
+    box-shadow: 0 2px 5px rgba(11, 12, 12, 1);
+}
+
+
+.imp_level1{
+    font-weight: 300 !important;
+    color: #484848 !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    margin: 0px !important;
+    word-wrap: break-word !important;
+    font-size: 19px !important;
+    line-height: 27px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.imp_level2{
+    font-weight: normal !important;
+    color: #484848 !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    margin: 0px !important;
+    word-wrap: break-word !important;
+    font-size: 22px !important;
+    line-height: 28px !important;
+    letter-spacing: -0.2px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.imp_level3{
+    font-weight: 700 !important;
+    color: #484848 !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    margin: 0px !important;
+    word-wrap: break-word !important;
+    font-size: 36px !important;
+    line-height: 44px !important;
+    letter-spacing: -0.6px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+}
+
+.hosting_split_bar{
+    position:relative;
+    margin-top: 100px !important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+    border-color: rgba(127, 127, 127, 0.62) !important;
+    width:690px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    top:50px;
+}
+
+.adv_block{
+    height:calc(100% - 200px);
+    width:200px;
+    margin:44px 10px 100px 10px;
+    display:inline-block;
+    text-align:center;
+
+}
+
+
+.method_block{
+    height:calc(100% - 200px);
+    width:200px;
+    margin:44px 10px 100px 10px;
+    display:inline-block;
+    text-align:center;
+}
+
+input.input_border {
+    min-height: 14px;
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #24292e;
+    vertical-align: middle;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    outline: none;
+    width: 94%;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
+}
+
+select.select_border{
+    min-height: 14px;
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #24292e;
+    vertical-align: middle;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    outline: none;
+    width: 94%;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-repeat: repeat-x;
+    background-position: -1px -1px;
+    background-size: 110% 110%;
+    border: 1px solid rgba(27,31,35,0.2);
+    border-radius: 0.25em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-blue {
+    color: #fff;
+    background-color: #28a745;
+    background-image: -webkit-linear-gradient(270deg, #404584 30%, #404584 30%);
+    background-image: linear-gradient(-180deg, #404584 30%, #404584 30%);
+}

@@ -1,0 +1,238 @@
+div{
+    border: dashed 1px blue;
+}
+
+form{
+	border: dashed 1px blue;
+
+}
+
+#host2_form {
+	display: inline-block;
+}
+
+#host2_btn{
+	float: left;
+	margin-top: 50px;
+}
+
+#host3_email{
+	margin: 0px;
+	display: inline-block;
+	width: 250px;
+}
+
+#host3_email_div{
+	display: inline-block;
+}
+
+#host3_email_address{
+	margin: 0px;
+	vertical-align: top;
+	width: 150px;
+	float: right;
+}
+
+#host3_form2{
+	margin-top: 50px;
+}
+
+#host3_authen_num{
+	margin-top: 0px;
+	width: 250px;
+	display: inline-block;
+}
+
+#btn3_2{
+	display: inline-block;
+	float: none;
+}
+
+#profile {
+	margin-top: 20px;
+}
+
+#host3_pic{
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	vertical-align: top;
+}
+
+#host3_text{
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+}
+
+#host3_info{
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	vertical-align: top;
+}
+
+#host3_img{
+	width: 100%;
+	height: 60%;
+	border: solid 1px black;
+}
+
+#host3_text2{
+
+}
+
+#host8_btn {
+	margin-top: 100px;
+}
+
+#host8_input {
+	margin-top: 20px;
+	height: 200px;
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #24292e;
+    /*vertical-align: middle;*/
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    outline: none;
+    width: 94%;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
+}
+
+#host2_btn {
+	margin-top: 50px;
+}
+
+.host_f_two{
+    margin-left: 50px;
+    margin-top: 50px;
+    display: inline-block;
+    height: 550px;
+    width: 42%;
+	vertical-align: top;
+}
+
+.host2_f_one{
+    margin-left: 50px;
+    margin-top: 50px;
+    display: inline-block;
+    height: 550px;
+    width: 350px;
+	vertical-align: top;
+}
+
+.host2_f_two_three{
+    margin-left: 30px;
+    margin-top: 50px;
+    display: inline-block;
+    height: 550px;
+    width: 300px;
+	vertical-align: top;
+}
+
+.host2_graph{
+    border: solid 1px black;
+    height: 300px;
+    width: 300px;
+}
+
+.host8_f_one_two{
+	margin-left: 30px;
+    margin-top: 50px;
+    display: inline-block;
+    height: 550px;
+    width: 30%;
+	vertical-align: top;
+}
+
+.host8_f_three{
+	margin-left: 30px;
+    margin-top: 50px;
+    display: inline-block;
+    height: 550px;
+    width: 25%;
+	vertical-align: top;
+}
+
+#hosting_form_two {
+    margin-left: 15%;
+    width: 80%;
+    height: 600px;
+}
+
+#host0_text, #host1_text {
+    width: 100%;
+    height: 85%;
+}
+
+#host0_check_btn, #host1_check_btn{
+    width: 100%;
+    height: 10%;
+    display: inline-block;	//�ҿ����µ�
+}
+
+#host0_img, #host1_img{
+    border: solid 1px black;
+    float: right;
+    width: 75%;
+    height: 100%;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-repeat: repeat-x;
+    background-position: -1px -1px;
+    background-size: 110% 110%;
+    border: 1px solid rgba(27,31,35,0.2);
+    border-radius: 0.25em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	display: block;
+    width: 25%;
+	height: 40px;
+    text-align: center;
+    float: right;
+}
+
+.btn-blue {
+    color: #fff;
+    background-color: #28a745;
+    background-image: -webkit-linear-gradient(270deg, #404584 30%, #404584 30%);
+    background-image: linear-gradient(-180deg, #404584 30%, #404584 30%);
+}
+
+.select_border{
+    min-height: 14px;
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #24292e;
+    vertical-align: middle;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    outline: none;
+    width: 94%;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
+    margin-top: 50px;
+}
