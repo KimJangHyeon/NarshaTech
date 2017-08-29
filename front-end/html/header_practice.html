@@ -40,7 +40,10 @@
 
                     <li>
                         <form id="signin" method="get" action="{{ url_for('go_reserved')}}">
+                            {%if %}
                             <p id="header_sign_in" onclick="document.getElementById('signin').submit()">sign in</p>
+                            {%endif%}
+                            <p id="header_log_out" onclick="document.getElementById('signin').submit()" style="display:none;">log out</p>
                         </form>
                     </li>
                     <li>

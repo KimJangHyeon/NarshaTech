@@ -2,15 +2,231 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <style>
+        body{
+            margin:0;
+        }
+    </style>
     <title>Title</title>
-    <link rel="stylesheet" href="../stylesheet/my_page"></link>
+    <link rel="stylesheet" href="../stylesheet/my_page.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheet/header.css">
 </head>
 <body>
-<div id="upper_container">
+<div id="header">
+    <!--<div id="top_color_bar"></div>-->
+    <div id="header_tool_bar">
+        <div id="header_contains">
+            <div id="logo">
+                <form id="logo_form" method="get" action="{{ url_for('go_reserved') }}">
+                    <img id="img_logo" onclick="document.getElementById('logo_form').submit()" src="../image/logo.png" alt="로고"/>
+                    <!--<p id="txt_logo" onclick="document.getElementById('logo_form').submit()">Narsha Tech</p>-->
+                </form>
+            </div>
+            <div id="menu_list">
+                <ul>
 
+                    <li>
+                        <form id="help" method="get" action="{{ url_for('go_reserved')}}">
+                            <p id="header_help" onclick="document.getElementById('help').submit()">help</p>
+                        </form>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+
+                    <li>
+                        <form id="hosting" method="get" action="{{ url_for('go_reserved')}}">
+                            <p id="header_hosting" onclick="document.getElementById('hosting').submit()">hosting</p>
+                        </form>
+                    </li>
+
+                    <li>
+                        <p>|</p>
+                    </li>
+
+                    <li>
+                        <form id="signin" method="get" action="{{ url_for('go_reserved')}}">
+                            {%if %}
+                            <p id="header_sign_in" onclick="document.getElementById('signin').submit()">sign in</p>
+                            {%endif%}
+                            <p id="header_log_out" onclick="document.getElementById('signin').submit()" style="display:none;">log out</p>
+                        </form>
+                    </li>
+                    <li>
+                        <p>|</p>
+                    </li>
+
+                    <li>
+                        <form id="signup" method="get" action="{{ url_for('go_reserved')}}">
+                            <p id="header_sign_up" onclick="document.getElementById('signup').submit()">sign up</p>
+                        </form>
+                    </li>
+
+
+
+            </ul>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div id="bottom_color_bar"></div>
+</div>
+<div id="upper_container">
+    <div id="upper_container_over">
+        <div id="upper_container_left">
+            <div id="upper_container_left0">
+                <h1>activity.title</h1>
+                <p><bold>학교 or 위치(if hashtag[i] == campustour; x = user.university; else x = activity.location.parse(city))</bold></p>
+                <a href="#">해시태그</a>
+            </div>
+            <div class="upper_container_left_child">
+                <h1>"호스트 공개"</h1>
+                <div id="host">
+                    <h1>호스트:   </h1>
+                    <a href = "#"> Go to the link 님</a>
+                    <img src="../image/logo.png">
+                </div>
+
+                <a href="#">공개 챗-링크</a>
+                <br/><br/>
+                <lu>
+                    <li>host.introduce</li>
+                    <li>"총"+totalhour+시간+"\n"</li>
+                    <li>(db추가 해야함) activity.vehicle</li>
+                    <li>activityLanguage[0]+", "+activityLanguage[i]반복+"로 제공"</li>
+
+                </lu>
+
+            </div>
+            <div class="upper_container_left_child">
+                <h1>액티비티 구성</h1>
+                <br/><br/>
+                <div id="activity_container">
+                    <div>
+                        <div id="activity_block">
+                            <div id="bar_block"></div>
+                            <div id="container_block">
+                                <p>장소  ( + "30분" activitySchedule.endhour - activitySchedule.starthour )</p>
+                                <img src="../image/logo.png">
+                                <div id="comment_scroll">
+                                    <h1>장소 제목</h1>
+                                    <p>장소 소개</p>
+                                    <p>글자 크기는 나중에 조절하자~!eufwhfjwoiweifj</p>
+                                    <p>제목을 좀더 위로 붙이기</p>
+                                    <p>스크롤 자동생성 되나?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br/><br/><br/>
+                <div id="map_marking">
+
+                </div>
+
+                <lu id="map_marking_li">
+                    <li>
+                        db에서 장소를 받아서 넣어줘
+                    </li>
+
+                </lu>
+            </div>
+            <div class="upper_container_left_child">
+                <a href="#">Go to the link</a>
+            </div>
+            <div class="upper_container_left_child">
+                <a href="#">예약 날짜 확인하기</a>
+            </div>
+            <div class="upper_container_left_child">
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            </div>
+            <p>Text- Double click to edit</p>
+
+            <!--이 div는 댓글을 2개 복사~!-->
+            <div id="comments_position">
+                <div id="comment" class="upper_container_left_child">
+                    <img id="comment_img" src="../image/logo.png">
+                    <div id="comment_block">
+                        <h1>그들은 커다란 이상 곧</h1>
+                        <p>댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글</p>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <p>Text- Double click to edit</p>
+            <div class="upper_container_left_child">
+                <div id="history"></div>
+            </div>
+            <p>Text- Double click to edit</p>
+            <div class="upper_container_left_child">
+                <br/><br/><br/><br/><br/><br/><br/>
+            </div>
+            <div class="upper_container_left_child">
+                <br/><br/><br/><br/>
+            </div>
+
+
+        </div>
+
+        <div id="upper_container_right">
+            <div id="scroll_block" class="scroll_fallow">
+                <img src="../image/logo.png" id="scroll_block_img">
+                <div id="scroll_block-btn">
+                    <p>activity.price+"/인"</p>
+                    <button id="btn__" class="btn btn-nar">Button</button>
+                </div>
+                <br/>
+                <br/><br/>
+                weijo
+            </div>
+        </div>
+    </div>
+    <div id="upper_container_bottom">
+        <div id="">
+
+        </div>
+        <div class="product">
+
+        </div>
+    </div>
 </div>
 <div id="lower_container">
+    <div id = "lower_container1">
+        <div id="lower_container1_0">
 
+        </div>
+        <div id="lower_container1_1">
+
+        </div>
+        <div id="lower_container1_2">
+
+        </div>
+        <div id="lower_container1_3">
+
+        </div>
+    </div>
 </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7KBy5GlwzwE0E-oIplx_GZeGE0Rxm_L0&callback=myMap"></script>
+<script src="../scripts/map_marked.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function() {
+    if ($(document).scrollTop() < 3065) {
+      $("#scroll_block").removeClass("scroll_fallow_fix");
+      $("#scroll_block").addClass("scroll_fallow");
+    } else {
+      $("#scroll_block").removeClass("scroll_fallow");
+      $("#scroll_block").addClass("scroll_fallow_fix");
+
+    }
+  });
+});
+</script>
 </body>
 </html>

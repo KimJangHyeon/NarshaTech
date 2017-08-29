@@ -1,24 +1,29 @@
+#contain_all{
+    overflow:hidden;
+    height:735px;
+    width:1520px;
+}
 #host_col0{
-    position:fixed;
+    float:left;
     left:13%;
     height:100%;
     width:33%;
     /*background: #ffffff;*/
 }
 #host_col1{
-    position:fixed;
+    float:left;
     left:46%;
     height:100%;
-    width:30%;
+    width:33%;
     /*background: #ffffff;*/
 }
 
 #host_col2{
-    position:fixed;
+    float:left;
     left:76%;
     height:85%;
     width:22%;
-    margin:60px 20px 60px 10px;
+    margin:60px 6% 60px 6%;
     background-repeat: no-repeat;
     background-image:url(../image/logo.png);
     background-size:100% 100%;

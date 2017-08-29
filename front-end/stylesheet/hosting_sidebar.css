@@ -1,9 +1,11 @@
 body{
     margin:0;
+    height:100%;
 }
 #side_bar{
+    float:left;
     display:inline-block;
-    position:fixed;
+
     width:13%;
     height:100%;
     background: rgba(0, 128, 0, 0.53);
@@ -13,9 +15,9 @@ body{
 }
 
 #contain{
+    float:left;
     display:inline-block;
-    position:fixed;
-    width:85%;
+    width:87%;
     height:100%;
     left:15%;
 }
@@ -32,7 +34,7 @@ body{
 .form_number p{
     color: white;
     font-family: NaumGothic;
-    font-size:20px;
+    font-size:15px;
     top:10px;
     margin:0;
 }
@@ -47,7 +49,7 @@ body{
 .form_number_selected p{
     color:rgba(0, 128, 0, 0.53);
     font-family: NaumGothic;
-    font-size:20px;
+    font-size:15px;
     margin:0;
 }
 
